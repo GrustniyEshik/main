@@ -11,7 +11,9 @@ BODY {
     overflow-x: hidden;
     margin: 0px;
         
+    /*
     background: linear-gradient(to bottom right, rgb(255, 255, 255) 10%, rgb(118, 0, 255) 40%, rgb(43, 0, 255) 100%);
+    */
 }
 div {
 
@@ -43,11 +45,13 @@ div {
 
 #navigationBlock {
     width: 99vw;
-    height: 20vh;
+    height: 17vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: 2vh;
     border: 0.1vw red solid;
 }
 #wrapper {
@@ -57,14 +61,21 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 0.1vw red solid;
+}
+.Logo {
+    width: auto;
+    height: auto;
 }
 #logo {
     display: flex;
     align-items: center;
+    border: 0.1vw red solid;
 }
 #logoImg {
     width: 10vh;
     height: 10vh;
+    border: 0.1vw red solid;
 }
 #logoText_1 {
     width: min-content;
@@ -74,14 +85,16 @@ div {
     font-size: 9vh;
     color: rgb(0, 0, 0);
 
+    border: 0.1vw red solid;
+
     /* Рамка для текста */
     /* -webkit-text-stroke: 5px rgb(0, 0, 0); */
 }
 #logoText_2 {
     font-family: Raleway;
     font-size: 1.6vh;
-    width: max-content;
-    position: relative;
+
+    border: 0.1vw red solid;
 }
 
 #menu {
@@ -96,12 +109,14 @@ div {
     border: 0.1vw red solid;
 }
 .Sections {
+    width: 12vh;
     padding: 0.5vh 1vh;
 
     font-size: 1.7vh;
     font-family: Raleway;
 
     transition: all 0.3s;
+    border: 0.1vw red solid;
 }
 .Sections:hover {
     background-color: rgb(190, 190, 190);
