@@ -44,79 +44,81 @@ div {
 }
 
 #navigationBlock {
-    width: 99vw;
-    height: 17vh;
+    width: 100vw;
+    height: auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     margin-top: 2vh;
-    border: 0.1vw red solid;
 }
+
+
 #wrapper {
     width: 100vw;
-    height: 75%;
+    height: 130px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 0.1vw red solid;
 }
 .Logo {
-    width: auto;
-    height: auto;
+    
 }
 #logo {
     display: flex;
     align-items: center;
-    border: 0.1vw red solid;
 }
 #logoImg {
-    width: 10vh;
-    height: 10vh;
-    border: 0.1vw red solid;
+    width: 100px;
+    height: 100px;
 }
 #logoText_1 {
     width: min-content;
-    height: 10vh;
+    height: 100px;
 
     font-family: Gadies;
-    font-size: 9vh;
+    font-size: 90px;
     color: rgb(0, 0, 0);
 
-    border: 0.1vw red solid;
 
     /* Рамка для текста */
     /* -webkit-text-stroke: 5px rgb(0, 0, 0); */
 }
 #logoText_2 {
     font-family: Raleway;
-    font-size: 1.6vh;
+    font-size: 16px;
 
-    border: 0.1vw red solid;
 }
 
+
+
 #menu {
-    width: 75vw;
-    height: 25%;
+    width: 70vw;
+    height: 50px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
-    border: 0.1vw red solid;
+    margin-top: 10px;
 }
 .Sections {
-    width: 12vh;
-    padding: 0.5vh 1vh;
+    width: 120px;
+    padding: 5px 10px;
 
-    font-size: 1.7vh;
+    display: flex;
+    justify-content: center;
+
+    font-size: 17px;
     font-family: Raleway;
 
+    border: 0.1vw rgb(0, 60, 255) solid;
+    border-radius: 1000px;
+
     transition: all 0.3s;
-    border: 0.1vw red solid;
 }
 .Sections:hover {
     background-color: rgb(190, 190, 190);
