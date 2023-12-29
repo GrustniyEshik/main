@@ -63,36 +63,38 @@ div {
     flex-direction: column;
     align-items: center;
 }
-.Logo {
-    
-}
+
 #logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
-#logoImg {
+#logo > div#logoTop {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logo > div#logoTop > img#logoImg {
     width: 100px;
     height: 100px;
 }
-#logoText_1 {
-    width: min-content;
-    height: 100px;
-
+#logo > div#logoTop > a#logoTextTop {
     font-family: Gadies;
     font-size: 90px;
     color: rgb(0, 0, 0);
-
-
     /* Рамка для текста */
     /* -webkit-text-stroke: 5px rgb(0, 0, 0); */
 }
-#logoText_2 {
+#logo > div#logoBottom {
+    width: auto;
+    height: auto;
+}
+#logo > div#logoBottom > a#logoTextBottom {
     font-family: Raleway;
     font-size: 16px;
-
 }
-
-
 
 #menu {
     width: 70vw;
@@ -105,7 +107,7 @@ div {
 
     margin-top: 10px;
 }
-.Sections {
+#menu > .Sections {
     width: 120px;
     padding: 5px 10px;
 
@@ -117,12 +119,10 @@ div {
 
     border: 0.1vw rgb(0, 60, 255) solid;
     border-radius: 1000px;
-
-    transition: all 0.3s;
 }
-.Sections:hover {
-    background-color: rgb(190, 190, 190);
-    transition: all 0.3s;
+#menu > .Sections:hover {
+    background-color: rgb(43, 0, 255);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -131,6 +131,20 @@ div {
     width: 95vw;
     height: 100vh;
 }
+#topBlock > div#logo {
+    background-color: antiquewhite;
+    width: 100px;
+    height: 100px;
+}
+#topBlock > div#logo2 {
+    background-color: rgb(235, 136, 6);
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
 
 #middleBlock1 {
     width: 95vw;
@@ -142,7 +156,7 @@ div {
     height: 100vh;
 }
 
-#bottomBlock {
+footer {
     width: 95vw;
     height: 20vh;
     background-color: rgb(43, 0, 255);
