@@ -18,6 +18,9 @@ BODY {
 div {
 
 }
+.Blocks{
+    margin-top: 1%;
+}
 
 
 
@@ -40,7 +43,6 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 0.1vw red solid;
 }
 
 #navigationBlock {
@@ -52,10 +54,12 @@ div {
     align-items: center;
 
     margin-top: 2vh;
+    margin-bottom: 2%;
+
+    border-bottom: 0.1vw blue solid;
 }
 
-
-#wrapper {
+#navigationBlock > #wrapper {
     width: 100vw;
     height: 130px;
 
@@ -63,41 +67,51 @@ div {
     flex-direction: column;
     align-items: center;
 }
-
-#logo {
+#navigationBlock > #wrapper > #logo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#logo > div#logoTop {
+#navigationBlock > #wrapper > #logo > #logoTop {
     width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#logo > div#logoTop > img#logoImg {
+#navigationBlock > #wrapper > #logo > #logoTop > #logoImg {
     width: 100px;
     height: 100px;
 }
-#logo > div#logoTop > a#logoTextTop {
+#navigationBlock > #wrapper > #logo > #logoTop > #logoTextTop {
     font-family: Gadies;
     font-size: 90px;
     color: rgb(0, 0, 0);
     /* Рамка для текста */
     /* -webkit-text-stroke: 5px rgb(0, 0, 0); */
 }
-#logo > div#logoBottom {
+#navigationBlock > #wrapper > #logo > #logoBottom {
     width: auto;
     height: auto;
 }
-#logo > div#logoBottom > a#logoTextBottom {
+#navigationBlock > #wrapper > #logo > #logoBottom > #logoTextBottom {
     font-family: Raleway;
     font-size: 16px;
 }
 
-#menu {
-    width: 70vw;
+#navigationBlock > #buttonMenu {
+    top: 3vw;
+    right: 3vw;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 0.1vw rgb(255, 0, 0) solid;
+    border-radius: 100%;
+    visibility: hidden;
+}
+
+#navigationBlock > #menu {
+    width: 750px;
     height: 50px;
 
     display: flex;
@@ -107,20 +121,21 @@ div {
 
     margin-top: 10px;
 }
-#menu > .Sections {
+#navigationBlock > #menu > .Sections {
     width: 120px;
     padding: 5px 10px;
 
     display: flex;
     justify-content: center;
 
+    text-decoration: none;
+    color: rgb(0, 0, 0);
     font-size: 17px;
     font-family: Raleway;
 
-    border: 0.1vw rgb(0, 60, 255) solid;
     border-radius: 1000px;
 }
-#menu > .Sections:hover {
+#navigationBlock > #menu > .Sections:hover {
     background-color: rgb(43, 0, 255);
     color: rgb(255, 255, 255);
 }
@@ -128,31 +143,128 @@ div {
 
 
 #topBlock {
-    width: 95vw;
-    height: 100vh;
-}
-#topBlock > div#logo {
-    width: auto;
+    width: 85vw;
     height: auto;
-    border: 0.1vw red solid;
-}
-#topBlock > div#logo > img#logoImg {
-    width: 300px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+#topBlock > div#logo {
+    width: min-content;
+    height: min-content;
+}
+#topBlock > #logo > #logoImg {
+    width: 30vw;
+}
 
+#topBlock > #description {
+    width: 50vw;
+    height: 50vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: Gadies;
+    font-size: 2vw;
+
+    border: 0.1vw rgb(25, 0, 255) solid;
+    border-radius: 100%;
+}
 
 
 
 #middleBlock1 {
-    width: 95vw;
+    width: 100vw;
     height: 100vh;
 }
 
-#middleBlock2 {
+#middleBlock1 > #bannerTop {
+    height: 70vh;
+}
+
+#middleBlock1 > #bannerTop > .BannerColor {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+#bannerColorHouse {
+    background-color: rgba(119, 0, 255, 0.25);
+}
+#bannerColorIndustry {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+#bannerColorAgriculturalIndustry {
+    background-color: rgba(172, 255, 47, 0.25);
+}
+#bannerColorCars {
+    background-color: rgba(165, 42, 42, 0.25);
+}
+
+#middleBlock1 > #bannerButtons {
+    height: 30vh;
+    display: flex;
+}
+
+#middleBlock1 > #bannerButtons > button {
+    width: 25%;
+    height: 100%;
+
+    padding: 0px;
+
+    border: 0.1vw;
+    border-radius: 0px;
+
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
+}
+#buutonHouse {
+    background-color: rgba(119, 0, 255, 1);
+}
+#buutonIndustry {
+    background-color: rgba(255, 0, 0, 1);
+}
+#buutonAgriculturalIndustry {
+    background-color: rgba(172, 255, 47, 1);
+}
+#buutonCars {
+    background-color: rgba(165, 42, 42, 1);
+}
+
+
+
+#middleBlock2{
     width: 95vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+#middleBlock2 > div {
+    float: left;
+}
+
+#middleBlock2 > #textPopularGoogs {
+    width: max-content;
+    height: max-content;
+
+    top: 0%;
+    left: 100%;
+
+    font-size: 50px;
+
+}
+#middleBlock2 > #popularGoods {
+    width: 100%;
+    height: 500px;
+    border: 0.1vw red solid;
+}
+
 
 footer {
     width: 95vw;
@@ -177,4 +289,53 @@ footer {
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(118, 0, 255);
+}
+
+@media (width<800px){
+
+    #navigationBlock > #menu {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    #navigationBlock > #buttonMenu {
+        visibility: visible;
+    }
+
+
+
+
+    #middleBlock1 {
+        height: auto;
+    }
+
+    #middleBlock1 > #bannerTop {
+        height: 390px;
+    }
+    
+    #middleBlock1 > #bannerTop > .BannerColor {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    #middleBlock1 > #bannerButtons {
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #middleBlock1 > #bannerButtons > button {
+        width: 50%;
+        height: 50%;
+
+        font-size: 30px;
+    }
+    #bannerColorAgriculturalIndustry {
+        display: none;
+    }
+    #bannerColorCars {
+        display: none;
+    }
 }
