@@ -273,6 +273,21 @@ BODY {
 
     font-size: 40px;
 }
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 {
+    justify-content: left;
+
+}
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Goods {
+    width: 300px;
+    height: 90%;
+
+    margin: 0px 5px 0px 5px;
+    
+    border-color: rgb(43, 0, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
 #modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Buttons {
     width: auto;
     height: auto;
