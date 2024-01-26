@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     user-select: none;
-
 }
 BODY {
     display: flex;
@@ -15,28 +14,10 @@ BODY {
     background: linear-gradient(to bottom right, rgb(255, 255, 255) 10%, rgb(118, 0, 255) 40%, rgb(43, 0, 255) 100%);
     */
 }
-div {
-
-}
-.Blocks{
-    margin-top: 1%;
-}
 
 
 
-#navigationBar {
-    width: 100vw;
-    height: 7vh;
-
-    position: fixed;
-    top: -100vh;
-
-    background-color: rgb(43, 0, 255);
-}
-
-
-
-#mainBlock {
+#mainModule {
     width: 100vw;
     height: auto;
 
@@ -45,7 +26,7 @@ div {
     align-items: center;
 }
 
-#navigationBlock {
+#navigationModule {
     width: 100vw;
     height: auto;
 
@@ -59,7 +40,7 @@ div {
     border-bottom: 0.1vw blue solid;
 }
 
-#navigationBlock > #wrapper {
+#navigationModule > #topNavigationModule {
     width: 100vw;
     height: 130px;
 
@@ -67,39 +48,39 @@ div {
     flex-direction: column;
     align-items: center;
 }
-#navigationBlock > #wrapper > #logo {
+#navigationModule > #topNavigationModule > #logo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#navigationBlock > #wrapper > #logo > #logoTop {
+#navigationModule > #topNavigationModule > #logo > #logoTop {
     width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#navigationBlock > #wrapper > #logo > #logoTop > #logoImg {
+#navigationModule > #topNavigationModule > #logo > #logoTop > #logoImg {
     width: 100px;
     height: 100px;
 }
-#navigationBlock > #wrapper > #logo > #logoTop > #logoTextTop {
+#navigationModule > #topNavigationModule > #logo > #logoTop > #logoTextTop {
     font-family: Gadies;
     font-size: 90px;
     color: rgb(0, 0, 0);
     /* Рамка для текста */
     /* -webkit-text-stroke: 5px rgb(0, 0, 0); */
 }
-#navigationBlock > #wrapper > #logo > #logoBottom {
+#navigationModule > #topNavigationModule > #logo > #logoBottom {
     width: auto;
     height: auto;
 }
-#navigationBlock > #wrapper > #logo > #logoBottom > #logoTextBottom {
+#navigationModule > #topNavigationModule > #logo > #logoBottom > #logoTextBottom {
     font-family: Raleway;
     font-size: 16px;
 }
 
-#navigationBlock > #buttonMenu {
+#navigationModule > #buttonMenu {
     top: 3vw;
     right: 3vw;
     position: fixed;
@@ -110,8 +91,8 @@ div {
     visibility: hidden;
 }
 
-#navigationBlock > #menu {
-    width: 750px;
+#navigationModule > #topMenu {
+    width: auto;
     height: 50px;
 
     display: flex;
@@ -121,45 +102,63 @@ div {
 
     margin-top: 10px;
 }
-#navigationBlock > #menu > .Sections {
+#navigationModule > #topMenu > .Sections {
     width: 120px;
+    height: auto;
+
     padding: 5px 10px;
+    margin: 0px 5px 0px 5px;
 
-    display: flex;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
 
-    text-decoration: none;
+    border-color: rgb(43, 0, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1000px;
+    
     color: rgb(0, 0, 0);
+    text-decoration: none;
     font-size: 17px;
     font-family: Raleway;
 
-    border-radius: 1000px;
-}
-#navigationBlock > #menu > .Sections:hover {
-    background-color: rgb(43, 0, 255);
+    /* Вариант 2
+    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-color: rgba(43, 0, 255, 0);
     color: rgb(255, 255, 255);
+    */
+}
+#navigationModule > #topMenu > .Sections:hover {
+    background-color: rgb(43, 0, 255);
+    border-color: rgb(40, 0, 240);
+    color: rgb(255, 255, 255);
+    /* К варианту 2
+    animation: animate1 8s linear infinite;
+    */
 }
 
 
 
-#topBlock {
+#moduleAboutUs {
     width: 85vw;
     height: auto;
+    
+    margin-bottom: 5vh;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#topBlock > div#logo {
+#moduleAboutUs > div#logo {
     width: min-content;
     height: min-content;
 }
-#topBlock > #logo > #logoImg {
+#moduleAboutUs > #logo > #logoImg {
     width: 30vw;
 }
 
-#topBlock > #description {
+#moduleAboutUs > #description {
     width: 50vw;
     height: 50vw;
 
@@ -171,12 +170,15 @@ div {
     font-family: Gadies;
     font-size: 2vw;
 
-    border: 0.1vw rgb(25, 0, 255) solid;
+    border-color: rgb(43, 0, 255);
+    border-width: 4px;
+    border-style: solid;
     border-radius: 100%;
 }
 
 
 
+/* Укоадено с https://www.detskoselsky.ru/
 #middleBlock1 {
     width: 100vw;
     height: 100vh;
@@ -234,42 +236,72 @@ div {
 #buutonCars {
     background-color: rgba(165, 42, 42, 1);
 }
+*/
 
 
 
-#middleBlock2{
+#modulePopularGoogs{
     width: 95vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-#middleBlock2 > div {
-    float: left;
-}
-
-#middleBlock2 > #textPopularGoogs {
+#modulePopularGoogs > #textPopularGoogs {
     width: max-content;
     height: max-content;
 
-    top: 0%;
-    left: 100%;
+    margin-bottom: 2vh;
 
     font-size: 50px;
+}
+
+#modulePopularGoogs > #blockPopularGoogs {
+    width: auto;
+    height: auto;
+}
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods {
+    width: 95vw;
+    height: 450px;
+
+    border: 0.1vw rgb(21, 135, 201) solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+}
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Buttons {
+    width: auto;
+    height: auto;
+
+    padding: 10px 10px 10px 10px;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-color: rgb(43, 0, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100px;
+    
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Buttons:hover {
+    background-color: rgb(43, 0, 255);
+    color: rgb(255, 255, 255);
 
 }
-#middleBlock2 > #popularGoods {
-    width: 100%;
-    height: 500px;
-    border: 0.1vw red solid;
-}
+
 
 
 footer {
-    width: 95vw;
+    width: 100vw;
     height: 20vh;
     background-color: rgb(43, 0, 255);
+    margin-top: 3vh;
 }
 
 
@@ -339,3 +371,34 @@ footer {
         display: none;
     }
 }
+
+/*Анимация копок 1*/
+@keyframes animate1 {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+   
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: .5s;
+  }
+   
+  .btn:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }

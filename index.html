@@ -11,10 +11,10 @@
 
 <body>
 
-    <div class="Blocks" id="mainBlock">
-        <div class="Blocks" id="navigationBlock">
-            <div id="wrapper">
+    <div class="Modules" id="mainModule">
 
+        <div class="Modules" id="navigationModule">
+            <div id="topNavigationModule">
                 <div id="logo">
                     <div id="logoTop">
                         <img class="LogoImg" id="logoImg" src="IMG/Logo.png">
@@ -24,21 +24,24 @@
                         <a id="logoTextBottom">лaбopaтopия эфekтивныx cpeдcтв</a>
                     </div>
                 </div>
-
             </div>
+
             <div id="buttonMenu">
                 <span></span>
             </div>
-            <div id="menu">
-                <a class="Sections" id="" href="https://schedule.ruc.su/">О нас</a>
-                <a class="Sections" id="">Продукция</a>
-                <a class="Sections" id="">Связь</a>
-                <a class="Sections" id="">Привет 4</a>
-                <a class="Sections" id="">Привет 5</a>
+
+            <div id="topMenu">
+                <button class="Sections" id="aboutUs" onClick="go(this.id)">О нас</button>
+                <button class="Sections" id="goods" onClick="go(this.id)">Продукция</button>
+                <button class="Sections" id="contacts" onClick="go(this.id)">Связь</button>
+                <button class="Sections" id="#" onClick="go(this.id)">Привет 4</button>
+                <button class="Sections" id="#" onClick="go(this.id)">Привет 5</button>
             </div>
         </div>
 
-        <div class="Blocks" id="topBlock">
+
+
+        <div class="Modules" id="moduleAboutUs">
             <div id="logo">
                 <img class="LogoImg" id="logoImg" src="IMG/Logo.png">
             </div>
@@ -49,7 +52,9 @@
             </a>
         </div>
 
-        <div class="Blocks" id="middleBlock1">
+
+        <!--Укоадено с https://www.detskoselsky.ru/
+        <div class="Modules" id="directions">
             <div id="bannerTop">
                 <div class="BannerColor" id="bannerColorHouse"></div>
                 <div class="BannerColor" id="bannerColorIndustry"></div>
@@ -63,18 +68,30 @@
                 <button class="Partition_Button" id="buutonCars">Машины</button>
             </div>
         </div>
+        -->
 
-        <div class="Blocks" id="middleBlock2">
+
+        <div class="Modules" id="modulePopularGoogs">
             <div id="textPopularGoogs">Популярные товары</div>
-            <div id="popularGoods">
+            <div id="blockPopularGoogs">
+                <div class="BlocksPopularGoods" id="blockPopularGoods1">
+                    <button class="Buttons" id="popularGoods1" onClick="load(this.id)">Загрузить</button>
+                </div>
+                <div class="BlocksPopularGoods" id="blockPopularGoods2">
+                    <div>
+                        
+                    </div>
+                </div>
+                <div class="BlocksPopularGoods" id="blockPopularGoods3">
 
+                </div>
             </div>
-
         </div>
 
         <footer>
 
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
