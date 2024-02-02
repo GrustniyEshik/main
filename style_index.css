@@ -165,17 +165,18 @@ BODY {
     border-radius: 100%;
 }
 
-/* Укоадено с https://www.detskoselsky.ru/
-#middleBlock1 {
+
+
+#directions {
     width: 100vw;
     height: 100vh;
 }
 
-#middleBlock1 > #bannerTop {
+#directions > #bannerTop {
     height: 70vh;
 }
 
-#middleBlock1 > #bannerTop > .BannerColor {
+#directions > #bannerTop > .BannerColor {
     width: 25%;
     height: 100%;
     float: left;
@@ -193,12 +194,12 @@ BODY {
     background-color: rgba(165, 42, 42, 0.25);
 }
 
-#middleBlock1 > #bannerButtons {
+#directions > #bannerButtons {
     height: 30vh;
     display: flex;
 }
 
-#middleBlock1 > #bannerButtons > button {
+#directions > #bannerButtons > button {
     width: 25%;
     height: 100%;
 
@@ -223,7 +224,8 @@ BODY {
 #buutonCars {
     background-color: rgba(165, 42, 42, 1);
 }
-*/
+
+
 
 #modulePopularGoogs{
     width: 95vw;
