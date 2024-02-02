@@ -9,10 +9,6 @@ BODY {
     /*Скрытый скролбар*/
     overflow-x: hidden;
     margin: 0px;
-        
-    /*
-    background: linear-gradient(to bottom right, rgb(255, 255, 255) 10%, rgb(118, 0, 255) 40%, rgb(43, 0, 255) 100%);
-    */
 }
 
 
@@ -39,7 +35,6 @@ BODY {
 
     border-bottom: 0.1vw blue solid;
 }
-
 #navigationModule > #topNavigationModule {
     width: 100vw;
     height: 130px;
@@ -79,7 +74,6 @@ BODY {
     font-family: Raleway;
     font-size: 16px;
 }
-
 #navigationModule > #buttonMenu {
     top: 3vw;
     right: 3vw;
@@ -90,7 +84,6 @@ BODY {
     border-radius: 100%;
     visibility: hidden;
 }
-
 #navigationModule > #topMenu {
     width: auto;
     height: 50px;
@@ -137,8 +130,6 @@ BODY {
     */
 }
 
-
-
 #moduleAboutUs {
     width: 85vw;
     height: auto;
@@ -149,7 +140,6 @@ BODY {
     flex-direction: row;
     justify-content: space-between;
 }
-
 #moduleAboutUs > div#logo {
     width: min-content;
     height: min-content;
@@ -157,7 +147,6 @@ BODY {
 #moduleAboutUs > #logo > #logoImg {
     width: 30vw;
 }
-
 #moduleAboutUs > #description {
     width: 50vw;
     height: 50vw;
@@ -176,9 +165,7 @@ BODY {
     border-radius: 100%;
 }
 
-
-
-
+/* Укоадено с https://www.detskoselsky.ru/
 #middleBlock1 {
     width: 100vw;
     height: 100vh;
@@ -236,9 +223,7 @@ BODY {
 #buutonCars {
     background-color: rgba(165, 42, 42, 1);
 }
-
-
-
+*/
 
 #modulePopularGoogs{
     width: 95vw;
@@ -247,7 +232,6 @@ BODY {
     align-items: center;
     flex-direction: column;
 }
-
 #modulePopularGoogs > #textPopularGoogs {
     width: max-content;
     height: max-content;
@@ -256,7 +240,6 @@ BODY {
 
     font-size: 50px;
 }
-
 #modulePopularGoogs > #blockPopularGoogs {
     width: auto;
     height: auto;
@@ -274,8 +257,11 @@ BODY {
     font-size: 40px;
 }
 #modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 {
+    display: flex;
+
     justify-content: left;
 
+    overflow-x:scroll;
 }
 #modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Goods {
     width: 300px;
@@ -288,29 +274,32 @@ BODY {
     border-style: solid;
     border-radius: 10px;
 }
-#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Buttons {
-    width: auto;
-    height: auto;
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > button {
+    width: 200px;
+    height: 100px;
 
     padding: 10px 10px 10px 10px;
+    margin: 0px 5px 0px 5px;
+    
+    display: flex;
 
     background-color: rgba(0, 0, 0, 0);
 
     border-color: rgb(43, 0, 255);
     border-width: 2px;
     border-style: solid;
-    border-radius: 100px;
+    border-radius: 10px;
     
     color: rgb(0, 0, 0);
-    font-size: 50px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
 }
 #modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Buttons:hover {
     background-color: rgb(43, 0, 255);
     color: rgb(255, 255, 255);
 
 }
-
-
 
 footer {
     width: 100vw;
@@ -337,6 +326,8 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(118, 0, 255);
 }
+
+
 
 @media (width<800px){
 
@@ -386,6 +377,8 @@ footer {
         display: none;
     }
 }
+
+
 
 /*Анимация копок 1*/
 @keyframes animate1 {
