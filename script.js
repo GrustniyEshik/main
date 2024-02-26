@@ -2,6 +2,8 @@ function go(id) {
     location.href = `https://grustniyeshik.github.io/OST/`+id+`/`+id+`.html`;
 }
 
+
+
 function load(id) {
     x = document.getElementById("scrollPopularGoods2");
 
@@ -12,6 +14,8 @@ function load(id) {
     <div class="Goods" id="goods1.4"></div>
     <div class="Goods" id="goods1.5"></div>`
 }
+
+
 
 x = 0;
 function theme() {
@@ -38,7 +42,8 @@ function dark_theme() {
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="dark.css">
-    <link rel="stylesheet" href="FONTS/fonts.css">`;
+    <link rel="stylesheet" href="FONTS/fonts.css">
+    <title>Ky</title>`;
 }
 function light_theme() {
     logo1 = document.getElementById("logoImg1");
@@ -53,5 +58,6 @@ function light_theme() {
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" href="FONTS/fonts.css">`;
+    <link rel="stylesheet" href="FONTS/fonts.css">
+    <title>Ky</title>`;
 }
