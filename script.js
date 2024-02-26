@@ -1,5 +1,5 @@
 function go(id) {
-    location.href = "D:\\Сайт_для_OST\\"+id+"\\"+id+".html";
+    location.href = `https://grustniyeshik.github.io/OST/`+id+`/`+id+`.html`;
 }
 
 function load(id) {
