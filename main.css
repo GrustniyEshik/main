@@ -92,16 +92,16 @@ BODY {
     border-radius: 100%;
 }
 #navigationModule > #topMenu {
-        width: auto;
-        height: auto;
+    width: auto;
+    height: auto;
     
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     
-        margin-top: 10px;
-        margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #navigationModule > #topMenu > .Sections {
     width: 120px;
