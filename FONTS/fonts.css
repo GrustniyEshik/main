@@ -6,3 +6,7 @@
     font-family: "Raleway";
     src: url(Raleway.ttf);
 }
+@font-face {
+    font-family: "Dell";
+    src: url(DELL_CYR.ttf);
+}
