@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="FONTS/fonts.css">
     <title>Ky</title>
 </head>
 
 <body>
-
+<div id="background"></div>
     <div class="Modules" id="mainModule">
 
         <div class="Modules" id="navigationModule">
-            <div id="topNavigationModule">
-                <div id="logo">
-                    <div id="logoTop">
-                        <img class="LogoImg" id="logoImg" src="IMG/Logo.png">
-                        <a id="logoTextTop">OST</a>
-                    </div>
-                    <div id="logoBottom">
-                        <a id="logoTextBottom">лaбopaтopия эфekтивныx cpeдcтв</a>
-                    </div>
+            <button id="theme" onClick="theme()">
+
+            </button>
+            <div id="navigationModuleTop">
+                <div id="logoTop">
+                    <img class="LogoImg" id="logoImg1" src="IMG/LogoBlack.png">
+                    <a id="logoTextTop">OST</a>
+                </div>
+                <div id="logoBottom">
+                    <a id="logoTextBottom">лaбopaтopия эфekтивныx cpeдcтв</a>
                 </div>
             </div>
 
@@ -43,7 +46,7 @@
 
         <div class="Modules" id="moduleAboutUs">
             <div id="logo">
-                <img class="LogoImg" id="logoImg" src="IMG/Logo.png">
+                <img class="LogoImg" id="logoImg2" src="IMG/LogoBlack.png">
             </div>
             <a id="description">
                 Мы мега крутые<br>
@@ -81,11 +84,17 @@
                     <button class="Buttons" id="popularGoodsCars" onClick="load(this.id)">Машины</button>
                 </div>
                 <div class="BlocksPopularGoods" id="blockPopularGoods2">
-                    <div class="Goods" id="goods2.1"></div>
-                    <div class="Goods" id="goods2.2"></div>
-                </div>
-                <div class="BlocksPopularGoods" id="blockPopularGoods3">
-
+                    <div class="Scroll" id="scrollPopularGoods2">
+                        <div class="Goods" id="goods2.1"></div>
+                        <div class="Goods" id="goods2.2"></div>
+                        <div class="Goods" id="goods2.3"></div>
+                        <div class="Goods" id="goods2.4"></div>
+                        <div class="Goods" id="goods2.5"></div>
+                        <div class="Goods" id="goods2.6"></div>
+                        <div class="Goods" id="goods2.7"></div>
+                        <div class="Goods" id="goods2.8"></div>
+                        <div class="Goods" id="goods2.9"></div>
+                    </div>
                 </div>
             </div>
         </div>
