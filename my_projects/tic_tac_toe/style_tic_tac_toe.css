@@ -1,0 +1,277 @@
+* {
+    user-select: none;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 1);
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background-color: rgb(0, 0, 0);
+}
+
+.control_div {
+    position: absolute;
+    left: 4vw;
+    top: 4.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border: 0.1vw rgb(0, 255, 0) solid;
+    border-radius: 0.5vw;
+    width: 2vw;
+    height: 1vw;
+}
+
+.title{
+    width: 35vw;
+    height: 5vw;
+
+    position: absolute;
+    transform: translate(-50%);
+    left: 50vw;
+    top: 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4vw;
+}
+
+#game_status{
+    width: 25vw;
+
+    position: absolute;
+    transform: translate(-50%);
+    left: 50vw;
+    top: 4vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    font-size: 3vw;
+}
+
+.pole{
+    width: 48vw;
+    height: 48vw;
+
+    position: absolute;
+    transform: translate(-50%);
+    left: 50vw;
+    top: 10vw;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 16vw;
+    height: 16vw;
+
+    border: 0.1vh solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 21vw;
+    font-family: 'Gill Sans Extrabold', sans-serif;
+}
+.cell:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#c1 {
+    border-top: none;
+    border-left: none;
+}
+#c2 {
+    border-top: none;
+}
+#c3 {
+    border-top: none;
+    border-right: none;
+}
+#c4 {
+    border-left: none;
+}
+#c6 {
+    border-right: none;
+}
+#c7 {
+    border-left: none;
+    border-bottom: none;
+}
+#c8 {
+    border-bottom: none;
+}
+#c9 {
+    border-right: none;
+    border-bottom: none;
+}
+
+#restart{
+    width: 12vw;
+    height: 4vw;
+
+    position: absolute;
+    transform: translate(-50%);
+    left: 85vw;
+    top: 25vw;
+
+    border: 0.1vh solid white;
+    border-radius: 0.5vw;
+
+    font-size: 3vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#restart:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.mods{
+    width: 12vw;
+    position: absolute;
+    transform: translate(-50%);
+    left: 85vw;
+    top: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mod{
+    width: 10vw;
+    height: 3vw;
+
+    border: 0.1vh solid white;
+    border-radius: 0.5vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25vw;
+
+    margin-top: 0.2vw;
+}
+.mod:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+@media (width<100vh){
+    .control_div {
+        left: 2vw;
+        top: 3vw;
+        display: flex;
+    }
+    
+    .control {
+        width: 5vw;
+        height: 3vw;
+    }
+    .title{
+        width: 100vw;
+        height: 4vh;
+        font-size: 4vh;
+    }
+    #game_status{
+        width: 100vw;
+        height: 4vh;
+        font-size: 3vh;
+        top: 3.5vh;
+    }
+    .pole{
+        width: 72vh;
+        height: 72vh;
+
+        top: 7.5vh;
+    }
+    .cell{
+        width: 24vh;
+        height: 24vh;
+        font-size: 30vh;
+    }
+    #restart{
+        width: 20vh;
+        height: 3.5vh;
+        left: 50vw;
+        top: 80vh;
+        font-size: 3vh;
+    }
+    .mods{
+        width: 100vw;
+        left: 50vw;
+        top: 85vh;
+    }
+    .mod{
+        width: 15vh;
+        height: 3vh;
+        font-size: 2vh;
+    }
+}
+
+@media (width<80vh){
+    .pole{
+        width: 90vw;
+        height: 90vw;
+    }
+    .cell{
+        width: 30vw;
+        height: 30vw;
+        font-size: 38vw;
+    }
+}
+
+@media (width<50vh){
+    #restart{
+        width: 43vw;
+        height: 7.2vw;
+        font-size: 7vw;
+        top: 60vh;
+    }
+    .mods{
+        width: 100vw;
+        top: 65vh;
+    }
+    .mod{
+        width: 30vw;
+        height: 7vw;
+        font-size: 4vw;
+    }
+}
+
+@media (height<60vw){
+    .pole{
+        width: 81vh;
+        height: 81vh;
+        top: 17vh;
+    }
+    .cell{
+        width: 27vh;
+        height: 27vh;
+        font-size: 35vh;
+    }
+}

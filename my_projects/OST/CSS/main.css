@@ -1,7 +1,6 @@
 * {
-    color: black;
+    color: rgb(0, 0, 0);
     box-sizing: border-box;
-    user-select: none;
 }
 BODY {
     display: flex;
@@ -169,7 +168,7 @@ BODY {
 #directions > #bannerTop > .BannerColor {
     float: left;
 
-    border: 0.1vw white solid;
+    border-bottom: 0.2vw rgba(255, 255, 255, 0) solid;
 }
 #directions > #bannerTop > #bannerColorHouse {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(118, 0, 255, 0.75));
@@ -195,7 +194,7 @@ BODY {
     /* Рамка для текста */
     /* -webkit-text-stroke: 0.1vw rgb(0, 0, 0); */
 
-    border: 0.1vw white solid;
+
     border-top: none;
 }
 #directions > #bannerButtons > #buutonHouse {
@@ -276,7 +275,19 @@ footer {
     width: 100vw;
     height: 20vh;
     background-color: rgb(43, 0, 255);
+
     margin-top: 3vh;
+    padding: 1vw;
+
+    color: white;
+}
+
+#adres {
+
+}
+#adresText {
+    font-family: Raleway;
+    color: rgb(255, 255, 255);
 }
 
 

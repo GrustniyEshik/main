@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+BODY {
+    display: flex;
+    justify-content: center;
+
+    /*Скрытый скролбар*/
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+
+
+#mainModule {
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navigationModule {
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2vh;
+    margin-bottom: 2%;
+
+    border-bottom: 0.1vw blue solid;
+}
+#navigationModule > #topNavigationModule {
+    width: 100vw;
+    height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navigationModule > #topNavigationModule > #logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navigationModule > #topNavigationModule > #logo > #logoTop {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#navigationModule > #topNavigationModule > #logo > #logoTop > #logoImg {
+    width: 100px;
+    height: 100px;
+}
+#navigationModule > #topNavigationModule > #logo > #logoTop > #logoTextTop {
+    font-family: Gadies;
+    font-size: 90px;
+    color: rgb(0, 0, 0);
+    /* Рамка для текста */
+    /* -webkit-text-stroke: 5px rgb(0, 0, 0); */
+}
+#navigationModule > #topNavigationModule > #logo > #logoBottom {
+    width: auto;
+    height: auto;
+}
+#navigationModule > #topNavigationModule > #logo > #logoBottom > #logoTextBottom {
+    font-family: Raleway;
+    font-size: 16px;
+}
+#navigationModule > #buttonMenu {
+    top: 3vw;
+    right: 3vw;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 0.1vw rgb(255, 0, 0) solid;
+    border-radius: 100%;
+    visibility: hidden;
+}
+#navigationModule > #topMenu {
+    width: auto;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 10px;
+}
+#navigationModule > #topMenu > .Sections {
+    width: 120px;
+    height: auto;
+
+    padding: 5px 10px;
+    margin: 0px 5px 0px 5px;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-color: rgb(43, 0, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1000px;
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Raleway;
+
+    /* Вариант 2
+    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-color: rgba(43, 0, 255, 0);
+    color: rgb(255, 255, 255);
+    */
+}
+#navigationModule > #topMenu > .Sections:hover {
+    background-color: rgb(43, 0, 255);
+    border-color: rgb(40, 0, 240);
+    color: rgb(255, 255, 255);
+    /* К варианту 2
+    animation: animate1 8s linear infinite;
+    */
+}
+
+#moduleAboutUs {
+    width: 85vw;
+    height: auto;
+    
+    margin-bottom: 5vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#moduleAboutUs > div#logo {
+    width: min-content;
+    height: min-content;
+}
+#moduleAboutUs > #logo > #logoImg {
+    width: 30vw;
+}
+#moduleAboutUs > #description {
+    width: 50vw;
+    height: 50vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: Gadies;
+    font-size: 2vw;
+
+    border-color: rgb(43, 0, 255);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+
+
+#directions {
+    width: 100vw;
+    height: 100vh;
+}
+
+#directions > #bannerTop {
+    height: 70vh;
+}
+
+#directions > #bannerTop > .BannerColor {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+#bannerColorHouse {
+    background-color: rgba(119, 0, 255, 0.25);
+}
+#bannerColorIndustry {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+#bannerColorAgriculturalIndustry {
+    background-color: rgba(172, 255, 47, 0.25);
+}
+#bannerColorCars {
+    background-color: rgba(165, 42, 42, 0.25);
+}
+
+#directions > #bannerButtons {
+    height: 30vh;
+    display: flex;
+}
+
+#directions > #bannerButtons > button {
+    width: 25%;
+    height: 100%;
+
+    padding: 0px;
+
+    border: 0.1vw;
+    border-radius: 0px;
+
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
+}
+#buutonHouse {
+    background-color: rgba(119, 0, 255, 1);
+}
+#buutonIndustry {
+    background-color: rgba(255, 0, 0, 1);
+}
+#buutonAgriculturalIndustry {
+    background-color: rgba(172, 255, 47, 1);
+}
+#buutonCars {
+    background-color: rgba(165, 42, 42, 1);
+}
+
+
+
+#modulePopularGoogs{
+    width: 95vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#modulePopularGoogs > #textPopularGoogs {
+    width: max-content;
+    height: max-content;
+
+    margin-bottom: 2vh;
+
+    font-size: 50px;
+}
+#modulePopularGoogs > #blockPopularGoogs {
+    width: auto;
+    height: auto;
+}
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods {
+    width: 95vw;
+    height: 450px;
+
+    border: 0.1vw rgb(21, 135, 201) solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+}
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 {
+    display: flex;
+
+    justify-content: left;
+
+    overflow-x:scroll;
+}
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Goods {
+    width: 300px;
+    height: 90%;
+
+    margin: 0px 5px 0px 5px;
+    
+    border-color: rgb(43, 0, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > button {
+    width: 200px;
+    height: 100px;
+
+    padding: 10px 10px 10px 10px;
+    margin: 0px 5px 0px 5px;
+    
+    display: flex;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-color: rgb(43, 0, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Buttons:hover {
+    background-color: rgb(43, 0, 255);
+    color: rgb(255, 255, 255);
+
+}
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(43, 0, 255);
+    margin-top: 3vh;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+/*Сама полоска скролбара*/
+::-webkit-scrollbar-track {
+    width: 1vw;
+    background-color: rgb(202, 202, 202);
+}
+/*Ползунок скролбара*/
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 0, 255);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(118, 0, 255);
+}
+
+
+
+@media (width<800px){
+
+    #navigationBlock > #menu {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    #navigationBlock > #buttonMenu {
+        visibility: visible;
+    }
+
+
+
+
+    #middleBlock1 {
+        height: auto;
+    }
+
+    #middleBlock1 > #bannerTop {
+        height: 390px;
+    }
+    
+    #middleBlock1 > #bannerTop > .BannerColor {
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+
+    #middleBlock1 > #bannerButtons {
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #middleBlock1 > #bannerButtons > button {
+        width: 50%;
+        height: 50%;
+
+        font-size: 30px;
+    }
+    #bannerColorAgriculturalIndustry {
+        display: none;
+    }
+    #bannerColorCars {
+        display: none;
+    }
+}
+
+
+
+/*Анимация копок 1*/
+@keyframes animate1 {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+   
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: .5s;
+  }
+   
+  .btn:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }

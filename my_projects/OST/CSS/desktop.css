@@ -31,16 +31,20 @@
 }
 #directions > #bannerTop {
     height: 50vw;
+    display: flex;
+    justify-content: space-between;
 }
 #directions > #bannerTop > .BannerColor {
-    width: 25%;
+    width: 24.8%;
     height: 100%;
 }
 #directions > #bannerButtons {
     height: 20vw;
+    display: flex;
+    justify-content: space-between;
 }
 #directions > #bannerButtons > button {
-    width: 25%;
+    width: 24.8%;
     height: 100%;
 
     font-size: 3vw;
