@@ -25,7 +25,7 @@ BODY {
     height: auto;
 
     padding: 5px 10px;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 5px;
 
     background-color: rgba(0, 0, 0, 0);
 
@@ -46,47 +46,38 @@ BODY {
     */
 }
 
-.Container {
-    width: max-content;
-    height: max-content;
-}
-
-
-
-#logoNavbar {
-    width: 30px;
-    height: 30px;
-}
-
 
 #navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#navbar > #containerLogoTop > #logoTop {
+#navbar > #logoTop {
+    width: max-content;
+    height: max-content;
+
     display: flex;
     flex-direction: column;
 
-    width: max-content;
-    height: max-content;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
 }
-#navbar > #containerLogoTop > #logoTop > #topPiece {
+#navbar > #logoTop > #topPiece {
     display: flex;
     flex-direction: row;
 
     width: max-content;
     height: max-content;
 }
-#navbar > #containerLogoTop > #logoTop > #topPiece > #containerLogoImgTop {
+#navbar > #logoTop > #topPiece > #containerLogoImgTop {
     width: 100px;
     height: 100px;
 }
-#navbar > #containerLogoTop > #logoTop > #topPiece > #containerLogoImgTop > #logoImgTop {
+#navbar > #logoTop > #topPiece > #containerLogoImgTop > #logoImgTop {
     width: 100px;
     height: 100px;
 }
-#navbar > #containerLogoTop > #logoTop > #topPiece > #logoTextTop {
+#navbar #logoTop > #topPiece > #logoTextTop {
     font-size: 67px;
 
     color: black;
@@ -94,11 +85,11 @@ BODY {
     font-family: Gadies;
     text-decoration: none;
 }
-#navbar > #containerLogoTop > #logoTop > #bottomPiece {
+#navbar > #logoTop > #bottomPiece {
     width: max-content;
     height: max-content;
 }
-#navbar > #containerLogoTop > #logoTop #bottomPiece > #logoTextBottom {
+#navbar > #logoTop #bottomPiece > #logoTextBottom {
     font-size: 15px;
 
     color: black;
@@ -108,8 +99,32 @@ BODY {
 }
 
 
+#navbar > #sections {
+    
+}
+#navbar > #sections > #main {
+    display: flex;
 
-#mainModule {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#navbar > #sections > #main > #logoImgNavbar {
+    width: 30px;
+
+    padding: 0%;
+    margin: 0px;
+}
+#navbar > #sections > #main > #logoTextNavbar {
+    padding: 0%;
+    margin: 0px;
+}
+
+
+
+
+
+
+/* #mainModule {
     width: 100vw;
     height: auto;
 
@@ -159,8 +174,8 @@ BODY {
 #navigationModule > #navigationModuleTop > #logoTop > #logoTextTop {
     font-family: Gadies;
     color: rgb(0, 0, 0);
-    /* Рамка для текста */
-    /* -webkit-text-stroke: 5px rgb(0, 0, 0); */
+    Рамка для текста
+    -webkit-text-stroke: 5px rgb(0, 0, 0);
 }
 #navigationModule > #navigationModuleTop > #logoBottom {
     width: auto;
@@ -208,20 +223,20 @@ BODY {
     font-size: 17px;
     font-family: Raleway;
 
-    /* Вариант 2
+    Вариант 2
     background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 400%;
     border-color: rgba(43, 0, 255, 0);
     color: rgb(255, 255, 255);
-    */
+    
 }
 #navigationModule > #topMenu > .Sections:hover {
     background-color: rgb(43, 0, 255);
     border-color: rgb(40, 0, 240);
     color: rgb(255, 255, 255);
-    /* К варианту 2
+    К варианту 2
     animation: animate1 8s linear infinite;
-    */
+    
 }
 
 #moduleAboutUs {
@@ -279,9 +294,8 @@ BODY {
     border: 0.1vw;
     border-radius: 0px;
 
-    /* Рамка для текста */
-    /* -webkit-text-stroke: 0.1vw rgb(0, 0, 0); */
-
+    Рамка для текста
+    -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
 
     border-top: none;
 }
@@ -376,7 +390,7 @@ footer {
 #adresText {
     font-family: Raleway;
     color: rgb(255, 255, 255);
-}
+} */
 
 
 

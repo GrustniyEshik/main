@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="1CSS/main.css">
-    <link rel="stylesheet" href="1CSS/desktop.css">
-    <link rel="stylesheet" href="1CSS/mobile.css">
     <link rel="stylesheet" href="4FONTS/fonts.css">
     <link rel="stylesheet" href="1CSS/bootstrap/bootstrap.css">
-    <title>Ky</title>
+    <title>О нас</title>
 </head>
 
 <body>
@@ -22,44 +20,56 @@
 
     <div class="Modules" id="mainModule">
 
-
-
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-
-            <div class="container-fluid">
-                <a class="navbar-brand" href="OST.html">
-                    <img class="LogoImg" id="logoNavbar" src="3IMG/Logo.png" alt="Bootstrap">
-                </a>
-                <a class="navbar-brand" href="OST.html">OST</a>
-
-                <!--При сужении экрана пропадёт верхнее меню и появится кнопка-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"  style=" background-color: rgb(43, 0, 255); border-radius: 50px; color: rgb(255, 255, 255);">О нас</a>
-                        </li>
-                        <li class="nav-item" class="Sections" id="goods">
-                            <a class="nav-link" href="goods.html">Продукция</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Связь</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ссылка</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ссылка</a>
-                        </li>
-                    </ul>
+        <div id="navbar">
+            <button class="LogoButton" id="logoTop">
+                <div id="topPiece">
+                    <a class="Container" id="containerLogoImgTop">
+                        <img class="LogoImg" id="logoImgTop" src="3IMG/LogoBlack.png">
+                    </a>
+                    <a class="LogoText" id="logoTextTop">OST</a>
                 </div>
+                <div id="bottomPiece">
+                    <a class="LogoText" id="logoTextBottom">лaбopaтopия эфekтивныx cpeдcтв</a>
+                </div>
+            </button>
+
+
+
+            <div class="navbar navbar-expand-md bg-body-tertiary" id="sections">
+
+                    <button class="Sections" id="main">
+                        <img class="LogoImg" id="logoImgNavbar" src="3IMG/Logo.png" alt="Bootstrap">
+                        <a class="navbar-brand" id="logoTextNavbar" href="OST.html">OST</a>
+                    </button>
+
+                    <!--При сужении экрана пропадёт верхнее меню и появится кнопка-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="Sections" href="#">О нас</a>
+                            </li>
+                            <li class="nav-item" id="goods">
+                                <a class="Sections" href="goods.html">Продукция</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="Sections" href="#">Связь</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="Sections" href="#">Ссылка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="Sections" href="#">Ссылка</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
 
-          </nav>
-
+        </div>
+    </div>
 
 
     <script src="2JS_PHP/bootstrap/bootstrap.js"></script>
