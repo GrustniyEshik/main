@@ -20,6 +20,94 @@ BODY {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.Sections {
+    width: 120px;
+    height: auto;
+
+    padding: 5px 10px;
+    margin: 0px 5px 0px 5px;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-color: rgb(43, 0, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1000px;
+    
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Raleway;
+
+    /* Вариант 2
+    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-color: rgba(43, 0, 255, 0);
+    color: rgb(255, 255, 255);
+    */
+}
+
+.Container {
+    width: max-content;
+    height: max-content;
+}
+
+
+
+#logoNavbar {
+    width: 30px;
+    height: 30px;
+}
+
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navbar > #containerLogoTop > #logoTop {
+    display: flex;
+    flex-direction: column;
+
+    width: max-content;
+    height: max-content;
+}
+#navbar > #containerLogoTop > #logoTop > #topPiece {
+    display: flex;
+    flex-direction: row;
+
+    width: max-content;
+    height: max-content;
+}
+#navbar > #containerLogoTop > #logoTop > #topPiece > #containerLogoImgTop {
+    width: 100px;
+    height: 100px;
+}
+#navbar > #containerLogoTop > #logoTop > #topPiece > #containerLogoImgTop > #logoImgTop {
+    width: 100px;
+    height: 100px;
+}
+#navbar > #containerLogoTop > #logoTop > #topPiece > #logoTextTop {
+    font-size: 67px;
+
+    color: black;
+
+    font-family: Gadies;
+    text-decoration: none;
+}
+#navbar > #containerLogoTop > #logoTop > #bottomPiece {
+    width: max-content;
+    height: max-content;
+}
+#navbar > #containerLogoTop > #logoTop #bottomPiece > #logoTextBottom {
+    font-size: 15px;
+
+    color: black;
+    
+    font-family: Raleway;
+    text-decoration: none;
+}
+
+
 
 #mainModule {
     width: 100vw;

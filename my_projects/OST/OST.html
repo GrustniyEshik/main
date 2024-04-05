@@ -4,29 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="desktop.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" href="FONTS/fonts.css">
+    <link rel="stylesheet" href="1CSS/main.css">
+    <link rel="stylesheet" href="4FONTS/fonts.css">
+    <link rel="stylesheet" href="1CSS/bootstrap/bootstrap.css">
     <title>Ky</title>
 </head>
 
 <body>
+
 <div id="background"></div>
+
+
+
+
+
     <div class="Modules" id="mainModule">
 
-        <div class="Modules" id="navigationModule">
+        <div id="navbar">
+            <a class="Container" id="containerLogoTop" href="#">
+                <div class="Logo" id="logoTop">
+                    <div id="topPiece">
+                        <img class="LogoImg" id="logoImgTop" src="3IMG/LogoBlack.png">
+                        <a class="LogoText" id="logoTextTop" href="#">OST</a>
+                    </div>
+                    <div id="bottomPiece">
+                        <a class="LogoText" id="logoTextBottom" href="#">лaбopaтopия эфekтивныx cpeдcтв</a>
+                    </div>
+                </div>
+            </a>
+
+            <div class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img class="LogoImg" id="logoNavbar" src="3IMG/Logo.png" alt="Bootstrap">
+                    </a>
+                    <a class="navbar-brand" href="#">OST</a>
+
+                    <!--При сужении экрана пропадёт верхнее меню и появится кнопка-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutUs.html">О нас</a>
+                            </li>
+                            <li class="nav-item" id="goods">
+                                <a class="nav-link" href="goods.html">Продукция</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Связь</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ссылка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ссылка</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+ 
+        <!-- <div class="Modules" id="navigationModule">
             <button id="theme" onClick="theme()">
 
             </button>
             <div id="navigationModuleTop">
-                <div id="logoTop">
-                    <img class="LogoImg" id="logoImg1" src="IMG/LogoBlack.png">
-                    <a id="logoTextTop">OST</a>
-                </div>
-                <div id="logoBottom">
-                    <a id="logoTextBottom">лaбopaтopия эфekтивныx cpeдcтв</a>
-                </div>
+                
             </div>
 
             <div id="buttonMenu">
@@ -40,13 +89,13 @@
                 <button class="Sections" id="#" onClick="go(this.id)">Привет 4</button>
                 <button class="Sections" id="#" onClick="go(this.id)">Привет 5</button>
             </div>
-        </div>
+        </div>  -->
 
 
 
-        <div class="Modules" id="moduleAboutUs">
+        <!-- <div class="Modules" id="moduleAboutUs">
             <div id="logo">
-                <img class="LogoImg" id="logoImg2" src="IMG/LogoBlack.png">
+                <img class="LogoImg" id="logoImg2" src="3IMG/LogoBlack.png">
             </div>
             <a id="description">
                 Мы мега крутые<br>
@@ -110,7 +159,12 @@
                 <div class="socialNetwork" id="VK"></div>
             </div>
         </footer>
-    </div>
-    <script src="script.js"></script>
+    </div> -->
+
+
+
+    <script src="2JS_PHP/bootstrap/bootstrap.js"></script>
+    <script src="2JS_PHP/bootstrap/bootstrap.bundle.js"></script>
+    <script src="2JS_PHP/script_OST.js"></script>
 </body>
 </html>
