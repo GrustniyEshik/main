@@ -3,30 +3,7 @@
 
 
 
-#navigationModule > #navigationModuleTop > #logoTop > #logoImg1 {
-    width: 100px;
-    height: 100px;
-}
-#navigationModule > #navigationModuleTop > #logoTop > #logoTextTop {
-    font-size: 90px;
-}
-#navigationModule > #navigationModuleTop > #logoBottom > #logoTextBottom {
-    font-size: 16px;
-}
-#navigationModule > #buttonMenu {
-    visibility: hidden;
-}
-#moduleAboutUs > #logo > #logoImg2 {
-    width: 30vw;
-}
-#moduleAboutUs > #description {
-    width: 50vw;
-    height: 50vw;
 
-    font-size: 30px;
-
-    border-width: 4px;
-}
 
 
 

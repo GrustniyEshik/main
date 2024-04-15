@@ -10,19 +10,124 @@ BODY {
     overflow-x: hidden;
     margin: 0px;
 }
-#background{
+#background {
     width: 100%;
     height: 100%;
 
     position: fixed;
-    z-index: -1;
+    z-index: 0;
 
+    background-color: rgb(255, 255, 255);
+}
+#curtain {
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    z-index: 0;
+    background: linear-gradient(180deg, rgb(133, 120, 120) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.LogoImg {
+    width: 50px;
+    height: 50px;
+}
+
+.Container {
+    width: min-content;
+    height: min-content;
+}
+
+
+
+#navbar {
+    width: 100vw;
+    height: max-content;
+
+    position: sticky;
+    top: 10px;
+    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar > #theme {
+    width: 50px;
+    height: 30px;
+
+    position: fixed;
+    top: 10px;
+    left: 50px;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-color: rgb(0, 0, 0);
+    border-width: 0.1vw;
+    border-style: solid;
+}
+
+#navbar > #logo {
+    width: 300px;
+    height: max-content;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
     background-color: rgba(0, 0, 0, 0);
 }
 
-.Sections {
-    width: 120px;
+#navbar > #logo > #logoImg {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+}
+
+#navbar > #logo > #logoTextTop {
+    font-size: 75px;
+
+    color: black;
+
+    font-family: Gadies;
+    text-decoration: none;
+}
+
+#navbar > #logo > #logoTextBottom {
+    font-size: 15px;
+
+    color: black;
+    
+    font-family: Raleway;
+    text-decoration: none;
+}
+
+#navbar  > #buttonMenu {
+    width: 50px;
+    height: 30px;
+
+    position: fixed;
+    top: 10px;
+    right: 50px;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-color: rgb(0, 0, 0);
+    border-width: 0.1vw;
+    border-style: solid;
+}
+
+#navbar > #menu {
+    width: auto;
     height: auto;
+}
+
+#navbar > #menu > .Sections{
+    width: 120px;
+    height: 40px;
 
     padding: 5px 10px;
     margin: 0px 5px;
@@ -47,197 +152,9 @@ BODY {
 }
 
 
-#navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#navbar > #logoTop {
-    width: max-content;
-    height: max-content;
-
-    display: flex;
-    flex-direction: column;
-
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-}
-#navbar > #logoTop > #topPiece {
-    display: flex;
-    flex-direction: row;
-
-    width: max-content;
-    height: max-content;
-}
-#navbar > #logoTop > #topPiece > #containerLogoImgTop {
-    width: 100px;
-    height: 100px;
-}
-#navbar > #logoTop > #topPiece > #containerLogoImgTop > #logoImgTop {
-    width: 100px;
-    height: 100px;
-}
-#navbar #logoTop > #topPiece > #logoTextTop {
-    font-size: 67px;
-
-    color: black;
-
-    font-family: Gadies;
-    text-decoration: none;
-}
-#navbar > #logoTop > #bottomPiece {
-    width: max-content;
-    height: max-content;
-}
-#navbar > #logoTop #bottomPiece > #logoTextBottom {
-    font-size: 15px;
-
-    color: black;
-    
-    font-family: Raleway;
-    text-decoration: none;
-}
-
-
-#navbar > #sections {
-    
-}
-#navbar > #sections > #main {
-    display: flex;
-
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-}
-#navbar > #sections > #main > #logoImgNavbar {
-    width: 30px;
-
-    padding: 0%;
-    margin: 0px;
-}
-#navbar > #sections > #main > #logoTextNavbar {
-    padding: 0%;
-    margin: 0px;
-}
 
 
 
-
-
-
-/* #mainModule {
-    width: 100vw;
-    height: auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#navigationModule {
-    width: 100vw;
-    height: auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-top: 2vh;
-    margin-bottom: 2%;
-
-    border-bottom: 0.1vw blue solid;
-}
-#navigationModule > #theme {
-    width: 50px;
-    height: 50px;
-
-    position:absolute;
-    left: 10px;
-    top: 10px;
-
-    border: 0.1vw red solid;
-}
-#navigationModule > #navigationModuleTop {
-    width: auto;
-    height: auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#navigationModule > #navigationModuleTop > #logoTop {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#navigationModule > #navigationModuleTop > #logoTop > #logoTextTop {
-    font-family: Gadies;
-    color: rgb(0, 0, 0);
-    Рамка для текста
-    -webkit-text-stroke: 5px rgb(0, 0, 0);
-}
-#navigationModule > #navigationModuleTop > #logoBottom {
-    width: auto;
-    height: auto;
-}
-#navigationModule > #navigationModuleTop > #logoBottom > #logoTextBottom {
-    font-family: Raleway;
-}
-#navigationModule > #buttonMenu {
-    top: 3vw;
-    right: 3vw;
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border: 0.1vw rgb(255, 0, 0) solid;
-    border-radius: 100%;
-}
-#navigationModule > #topMenu {
-    width: auto;
-    height: auto;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#navigationModule > #topMenu > .Sections {
-    width: 120px;
-    height: auto;
-
-    padding: 5px 10px;
-    margin: 0px 5px 0px 5px;
-
-    background-color: rgba(0, 0, 0, 0);
-
-    border-color: rgb(43, 0, 255);
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 1000px;
-    
-    text-decoration: none;
-    font-size: 17px;
-    font-family: Raleway;
-
-    Вариант 2
-    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    border-color: rgba(43, 0, 255, 0);
-    color: rgb(255, 255, 255);
-    
-}
-#navigationModule > #topMenu > .Sections:hover {
-    background-color: rgb(43, 0, 255);
-    border-color: rgb(40, 0, 240);
-    color: rgb(255, 255, 255);
-    К варианту 2
-    animation: animate1 8s linear infinite;
-    
-}
 
 #moduleAboutUs {
     width: 85vw;
@@ -294,7 +211,6 @@ BODY {
     border: 0.1vw;
     border-radius: 0px;
 
-    Рамка для текста
     -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
 
     border-top: none;
@@ -390,7 +306,7 @@ footer {
 #adresText {
     font-family: Raleway;
     color: rgb(255, 255, 255);
-} */
+}
 
 
 
