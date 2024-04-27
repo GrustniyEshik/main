@@ -6,6 +6,9 @@ BODY {
     display: flex;
     justify-content: center;
 
+    position: relative;
+    z-index: -2;
+
     /*Скрытый скролбар*/
     overflow-x: hidden;
     margin: 0px;
@@ -15,16 +18,16 @@ BODY {
     height: 100%;
 
     position: fixed;
-    z-index: 0;
+    z-index: -2;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
 }
 #curtain {
     width: 100vw;
-    height: 100px;
+    height: 300px;
     position: fixed;
     z-index: 0;
-    background: linear-gradient(180deg, rgb(133, 120, 120) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.95) 60%, rgba(0, 0, 0, 0) 100%);
 }
 
 .LogoImg {
@@ -39,13 +42,37 @@ BODY {
 
 
 
+#mainModule {
+    width: 90vw;
+    height: max-content;
+    
+    position: relative;
+    z-index: -2;
+
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto auto auto auto auto;
+}
+#mainModule * {
+    grid-row: auto;
+    justify-self: center;
+    z-index: 1;
+}
+
+
+
 #navbar {
-    width: 100vw;
+    width: max-content;
     height: max-content;
 
+    grid-row: auto;
+    justify-self: center;
+
     position: sticky;
+    z-index: 2;
     top: 10px;
     margin-top: 50px;
+    margin-bottom: 50px;
     
     display: flex;
     flex-direction: column;
@@ -153,24 +180,35 @@ BODY {
 
 
 
-
-
-
-#moduleAboutUs {
+#aboutUs {
     width: 85vw;
     height: auto;
     
-    margin-bottom: 5vh;
+    position: relative;
+    z-index: -1;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-#moduleAboutUs > div#logo {
+#aboutAs * {
+    z-index: 2;
+}
+#aboutUs > #logo {
     width: min-content;
     height: min-content;
 }
-#moduleAboutUs > #description {
+#aboutUs > #logo > #logoImg {
+    width: 350px;
+    height: auto;
+}
+#aboutUs > #slogan {
+    width: 50vw;
+    height: 50vw;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,13 +217,30 @@ BODY {
     font-family: Gadies;
 
     border-color: rgb(43, 0, 255);
+    border-width: 4px;
     border-style: solid;
     border-radius: 100%;
+
+    font-size: 30px;
 }
 
 
+#directions {
+    width: 100vw;
+    height: auto;
 
+    position: relative;
+    z-index: -1;
+}
+#directions > #bannerTop {
+    height: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
 #directions > #bannerTop > .BannerColor {
+    width: 24.8%;
+    height: 100%;
+
     float: left;
 
     border-bottom: 0.2vw rgba(255, 255, 255, 0) solid;
@@ -203,22 +258,27 @@ BODY {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(106, 10, 38, 0.75));
 }
 #directions > #bannerButtons {
+    height: 20vw;
     display: flex;
+    justify-content: space-between;
 }
 #directions > #bannerButtons > .Partition_Button {
-    padding: 0px;
+    width: 24.8%;
+    height: 100%;
 
-    border: 0.1vw;
-    border-radius: 0px;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
 
-    -webkit-text-stroke: 0.1vw rgb(0, 0, 0);
+    -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 0.5);
 
-    border-top: none;
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
 }
 #directions > #bannerButtons > #buutonHouse {
     background-color: rgba(118, 0, 255, 0.75);
-    color: rgba(4, 70, 142, 1);
-    -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
 }
 #directions > #bannerButtons > #buutonIndustry {
     background-color: rgba(255, 40, 51, 0.75);
@@ -236,6 +296,9 @@ BODY {
     width: 95vw;
     height: auto;
 
+    position: relative;
+    z-index: -1;
+
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -244,33 +307,40 @@ BODY {
     width: max-content;
     height: max-content;
 
+    font-size: 50px;
+
+    margin-top: 2vh;
     margin-bottom: 2vh;
 }
+#modulePopularGoogs > #blockPopularGoogs {
+
+}
 #modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods {
+    width: 95vw;
+    height: 450px;
+
     border: 0.1vw rgb(21, 135, 201) solid;
 
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > .Scroll {
-    width: max-content;
-    height: 90%;
+    float: left;
 
-    display: flex;
-    flex-direction: row;
+    font-size: 40px;
 }
-#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > .Scroll > .Goods {
+
+/*Кнопки*/
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > button {
+    width: 200px;
+    height: 100px;
+
+    padding: 10px 10px 10px 10px;
     margin: 0px 5px 0px 5px;
 
-    border-color: rgb(43, 0, 255);
-    border-style: solid;
-    border-radius: 10px;
-}
-#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 {
-    overflow-x:scroll;
-}
-#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > button {
+    border-width: 2px;
+
+    font-size: 25px;
+    
     display: flex;
 
     background-color: rgba(0, 0, 0, 0);
@@ -282,9 +352,40 @@ BODY {
     justify-content: center;
     align-items: center;
 }
-#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > .Buttons:hover {
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > button:hover {
     background-color: rgb(43, 0, 255);
     color: rgb(255, 255, 255);
+}
+
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods1 {
+    
+}
+
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 {
+    overflow-x: scroll;
+}
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > .Scroll {
+    width: max-content;
+    height: 90%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+}
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > .Scroll > .Goods {
+    width: 300px;
+    height: 100%;
+
+    position: relative;
+
+    border-width: 2px;
+
+    margin: 0px 5px 0px 5px;
+
+    border-color: rgb(43, 0, 255);
+    border-style: solid;
+    border-radius: 10px;
 }
 
 

@@ -14,7 +14,7 @@
 <div id="background"></div>
 <div id="curtain"></div>
 
-    <div class="Modules" id="mainModule">
+    <div id="mainModule">
 
         <div class="Modules" id="navbar">
             <button id="theme" onClick="theme()">
@@ -36,21 +36,21 @@
                 </button>
 
             <div id="menu">
-                <button class="Sections" id="aboutUs" onClick="go(this.id)">О нас</button>
+                <button class="Sections" id="buttonAboutUs" onClick="go(this.id)">О нас</button>
                 <button class="Sections" id="goods" onClick="go(this.id)">Продукция</button>
                 <button class="Sections" id="contacts" onClick="go(this.id)">Связь</button>
-                <!-- <button class="Sections" id="#" onClick="go(this.id)">Привет 4</button>
-                <button class="Sections" id="#" onClick="go(this.id)">Привет 5</button> -->
+                <button class="Sections" id="#" onClick="go(this.id)">Привет 4</button>
+                <button class="Sections" id="#" onClick="go(this.id)">Привет 5</button>
             </div>
         </div>
 
 
 
-        <div class="Modules" id="moduleAboutUs">
+        <div class="Modules" id="aboutUs">
             <div id="logo">
-                <img class="LogoImg" id="logoImg2" src="3IMG/LogoBlack.png">
+                <img class="LogoImg" id="logoImg" src="3IMG/LogoBlack.png">
             </div>
-            <a id="description">
+            <a id="slogan">
                 Мы мега крутые<br>
                 Выбирайте нас<br>
                 Йоу
@@ -67,10 +67,10 @@
                 <div class="BannerColor" id="bannerColorCars"></div>
             </div>
             <div id="bannerButtons">
-                <button class="Partition_Button" id="buutonHouse">Дом</button>
-                <button class="Partition_Button" id="buutonIndustry">Промышленость</button>
-                <button class="Partition_Button" id="buutonAgriculturalIndustry">Агро<br>промышленость</button>
-                <button class="Partition_Button" id="buutonCars">Машины</button>
+                <button class="Partition_Button" id="buutonHouse" onClick="">Дом</button>
+                <button class="Partition_Button" id="buutonIndustry" onClick="">Промышленость</button>
+                <button class="Partition_Button" id="buutonAgriculturalIndustry" onClick="">Агро<br>промышленость</button>
+                <button class="Partition_Button" id="buutonCars" onClick="">Машины</button>
             </div>
         </div>
 
@@ -114,5 +114,6 @@
         </footer>
     </div>
 
+    <script src="2JS_PHP/script_OST.js"></script>
 </body>
 </html>
