@@ -1,5 +1,5 @@
 function go(id) {
-    location.href = `C:/Users/Гыук/Documents/main.git/main/my_projects/OST`+id+`/`+id+`.html`;
+    location.href = `https://grustniyeshik.github.io/main/my_projects/OST/`+id+`/`+id+`.html`;
 }
 
 
