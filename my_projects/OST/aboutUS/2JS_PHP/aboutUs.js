@@ -1,5 +1,5 @@
 function go(id) {
-    location.href = `https://grustniyeshik.github.io/OST/`+id+`/`+id+`.html`;
+    location.href = `https://grustniyeshik.github.io/main/my_projects/OST/`+id+`/`+id+`.html`;
 }
 
 
@@ -17,7 +17,7 @@ function load(id) {
 
 
 
-x = 0;
+/*x = 0;
 function theme() {
     if (x == 0) {
         dark_theme();
@@ -60,4 +60,4 @@ function light_theme() {
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="FONTS/fonts.css">
     <title>Ky</title>`;
-}
+}*/
