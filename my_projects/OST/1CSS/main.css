@@ -141,6 +141,12 @@ BODY {
     color: rgb(255, 255, 255);
     */
 }
+#navbar > #menu > .Sections:hover {
+    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-color: rgba(43, 0, 255, 0);
+    color: rgb(255, 255, 255);
+}
 
 
 
@@ -349,8 +355,10 @@ BODY {
     justify-content: center;
     align-items: center;
 }
-#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > button:hover {
-    background-color: rgb(43, 0, 255);
+#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > button:hover { 
+    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-color: rgba(43, 0, 255, 0);
     color: rgb(255, 255, 255);
 }
 
@@ -360,21 +368,19 @@ BODY {
 
 #modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 {
     overflow-x: scroll;
+    display: flex;
+    justify-content: start;
 }
-#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > .Scroll {
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > #scrollPopularGoods {
     width: max-content;
     height: 90%;
-
-    position: relative;
 
     display: flex;
     flex-direction: row;
 }
-#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > .Scroll > .Goods {
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > #scrollPopularGoods > .Goods {
     width: 300px;
     height: 100%;
-
-    position: relative;
 
     border-width: 2px;
 
