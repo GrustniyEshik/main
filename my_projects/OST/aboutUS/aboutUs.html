@@ -4,76 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="1CSS/main.css">
-    <link rel="stylesheet" href="4FONTS/fonts.css">
-    <link rel="stylesheet" href="1CSS/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="1CSS/aboutUs.css">
     <title>О нас</title>
 </head>
 
 <body>
 
-<div id="background"></div>
+    <div id="background"></div>
 
 
 
+    <div id="navbar">
+        <button id="theme" onClick="theme()">
+            <a>тема</a>
+            <span></span>
+        </button>
 
 
-    <div class="Modules" id="mainModule">
+        <button id="logo">
+            <img id="logoImg" src="3IMG/LogoBlack.png">
+            <a id="logoTextTop">OST</a>
+            <a id="logoTextBottom">лaбopaтopия эфekтивныx cpeдcтв</a>
+        </button>
+    
 
-        <div id="navbar">
-            <button class="LogoButton" id="logoTop">
-                <div id="topPiece">
-                    <a class="Container" id="containerLogoImgTop">
-                        <img class="LogoImg" id="logoImgTop" src="3IMG/LogoBlack.png">
-                    </a>
-                    <a class="LogoText" id="logoTextTop">OST</a>
-                </div>
-                <div id="bottomPiece">
-                    <a class="LogoText" id="logoTextBottom">лaбopaтopия эфekтивныx cpeдcтв</a>
-                </div>
-            </button>
+        <button class="#" id="buttonMenu">
+            <a>меню</a>
+            <span></span>
+        </button>
 
-
-
-            <div class="navbar navbar-expand-md bg-body-tertiary" id="sections">
-
-                    <button class="Sections" id="main">
-                        <img class="LogoImg" id="logoImgNavbar" src="3IMG/Logo.png" alt="Bootstrap">
-                        <a class="navbar-brand" id="logoTextNavbar" href="OST.html">OST</a>
-                    </button>
-
-                    <!--При сужении экрана пропадёт верхнее меню и появится кнопка-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="Sections" href="#">О нас</a>
-                            </li>
-                            <li class="nav-item" id="goods">
-                                <a class="Sections" href="goods.html">Продукция</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="Sections" href="#">Связь</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="Sections" href="#">Ссылка</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="Sections" href="#">Ссылка</a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
-
+        <div id="menu">
+            <button class="Sections" id="buttonAboutUs" onClick="go(this.id)">О нас</button>
+            <button class="Sections" id="goods" onClick="go(this.id)">Продукция</button>
+            <button class="Sections" id="contacts" onClick="go(this.id)">Связь</button>
+            <button class="Sections" id="#" onClick="go(this.id)">Привет 4</button>
+            <button class="Sections" id="#" onClick="go(this.id)">Привет 5</button>
         </div>
     </div>
 
+    <div id="mainModule">
 
-    <script src="2JS_PHP/bootstrap/bootstrap.js"></script>
-    <script src="2JS_PHP/bootstrap/bootstrap.bundle.js"></script>
-    <script src="2JS_PHP/script_OST.js"></script>
+    </div>
+
+    <footer>
+        <div id="adres">
+            <a id="adresText">140406<br>Московская область<br>г.о. Коломна<br>г Коломна<br>ул Октябрьской Революции<br>дом 427А квартира 1</a>
+        </div>
+        <div>
+            <div class="socialNetwork" id="VK"></div>
+            <div class="socialNetwork" id="Telegram"></div>
+            <div class="socialNetwork" id="Instagram"></div>
+            <div class="socialNetwork" id="VK"></div>
+        </div>
+    </footer>
+
+    <div id="curtain"></div>
 </body>
 </html>

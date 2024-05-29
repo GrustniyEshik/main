@@ -1,0 +1,229 @@
+* {
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+BODY {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*Скрытый скролбар*/
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+
+
+#navbar {
+    width: max-content;
+    height: auto;
+
+    position: sticky;
+    z-index: 1;
+    top: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navbar > #theme {
+    width: 50px;
+    height: 30px;
+
+    position: fixed;
+    top: 10px;
+    left: 50px;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-color: rgb(0, 0, 0);
+    border-width: 0.1vw;
+    border-style: solid;
+}
+#navbar > #logo {
+    width: 300px;
+    height: max-content;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#navbar > #logo > #logoImg {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+}
+#navbar > #logo > #logoTextTop {
+    font-size: 75px;
+
+    color: black;
+
+    font-family: Gadies;
+    text-decoration: none;
+}
+#navbar > #logo > #logoTextBottom {
+    font-size: 15px;
+
+    color: black;
+    
+    font-family: Raleway;
+    text-decoration: none;
+}
+#navbar  > #buttonMenu {
+    width: 50px;
+    height: 30px;
+
+    position: fixed;
+    top: 10px;
+    right: 50px;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-color: rgb(0, 0, 0);
+    border-width: 0.1vw;
+    border-style: solid;
+}
+#navbar > #menu {
+    width: auto;
+    height: auto;
+}
+#navbar > #menu > .Sections{
+    width: 120px;
+    height: 40px;
+
+    padding: 5px 10px;
+    margin: 0px 5px;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-color: rgb(43, 0, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 1000px;
+    
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Raleway;
+
+    /* Вариант 2
+    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-color: rgba(43, 0, 255, 0);
+    color: rgb(255, 255, 255);
+    */
+}
+#navbar > #menu > .Sections:hover {
+    background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-color: rgba(43, 0, 255, 0);
+    color: rgb(255, 255, 255);
+}
+#curtain {
+    width: 100vw;
+    height: 300px;
+    position: fixed;
+    z-index: 0;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.95) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+
+#mainModule {
+    width: 90vw;
+    height: 1000px;
+    
+    position: relative;
+    z-index: -1;
+
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto auto auto auto auto;
+
+}
+
+
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(43, 0, 255);
+
+    margin-top: 3vh;
+    padding: 1vw;
+
+    color: white;
+}
+
+#adres {
+
+}
+#adresText {
+    font-family: Raleway;
+    color: rgb(255, 255, 255);
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+/*Сама полоска скролбара*/
+::-webkit-scrollbar-track {
+    width: 1vw;
+    background-color: rgb(202, 202, 202);
+}
+/*Ползунок скролбара*/
+::-webkit-scrollbar-thumb {
+    background-color: rgb(43, 0, 255);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(118, 0, 255);
+}
+
+
+
+
+
+
+
+/*Анимация копок 1*/
+@keyframes animate1 {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+   
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: .5s;
+  }
+   
+  .btn:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }
