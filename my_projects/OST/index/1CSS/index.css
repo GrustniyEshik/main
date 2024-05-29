@@ -215,9 +215,6 @@ BODY {
 #directions {
     width: 100vw;
     height: auto;
-
-    position: relative;
-    z-index: -1;
 }
 #directions > #bannerTop {
     height: 50vw;
@@ -282,9 +279,6 @@ BODY {
 #modulePopularGoogs{
     width: 95vw;
     height: auto;
-
-    position: relative;
-    z-index: -1;
 
     display: flex;
     align-items: center;
@@ -414,10 +408,6 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(118, 0, 255);
 }
-
-
-
-
 
 
 
