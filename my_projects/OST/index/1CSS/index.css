@@ -17,15 +17,6 @@ BODY {
     overflow-x: hidden;
     margin: 0px;
 }
-/* #background {
-    width: 100%;
-    height: 100%;
-
-    position: fixed;
-    z-index: -2;
-
-    background-color: rgba(0, 0, 0, 0);
-} */
 
 
 
@@ -57,7 +48,6 @@ BODY {
     border-width: 0.1vw;
     border-style: solid;
 }
-
 #navbar > #logo {
     width: 300px;
     height: max-content;
@@ -70,14 +60,12 @@ BODY {
     border: none;
     background-color: rgba(0, 0, 0, 0);
 }
-
 #navbar > #logo > #logoImg {
     width: 100px;
     height: 100px;
 
     position: relative;
 }
-
 #navbar > #logo > #logoTextTop {
     font-size: 75px;
 
@@ -86,7 +74,6 @@ BODY {
     font-family: Gadies;
     text-decoration: none;
 }
-
 #navbar > #logo > #logoTextBottom {
     font-size: 15px;
 
@@ -95,7 +82,6 @@ BODY {
     font-family: Raleway;
     text-decoration: none;
 }
-
 #navbar  > #buttonMenu {
     width: 50px;
     height: 30px;
@@ -110,12 +96,10 @@ BODY {
     border-width: 0.1vw;
     border-style: solid;
 }
-
 #navbar > #menu {
     width: auto;
     height: auto;
 }
-
 #navbar > #menu > .Sections{
     width: 120px;
     height: 40px;
@@ -147,9 +131,6 @@ BODY {
     border-color: rgba(43, 0, 255, 0);
     color: rgb(255, 255, 255);
 }
-
-
-
 #curtain {
     width: 100vw;
     height: 300px;
@@ -183,7 +164,7 @@ BODY {
 
 
 
-#aboutUs {
+#moduleAboutUs {
     width: 85vw;
     height: auto;
     
@@ -197,18 +178,18 @@ BODY {
     flex-direction: row;
     justify-content: space-between;
 }
-#aboutAs * {
+#moduleAboutAs * {
     z-index: 2;
 }
-#aboutUs > #logo {
+#moduleAboutUs > #logo {
     width: min-content;
     height: min-content;
 }
-#aboutUs > #logo > #logoImg {
+#moduleAboutUs > #logo > #logoImg {
     width: 350px;
     height: auto;
 }
-#aboutUs > #slogan {
+#moduleAboutUs > #slogan {
     width: 50vw;
     height: 50vw;
 
