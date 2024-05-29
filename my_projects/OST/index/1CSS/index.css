@@ -99,6 +99,9 @@ BODY {
 #navbar > #menu {
     width: auto;
     height: auto;
+
+    display: flex;
+    flex-wrap: nowrap;
 }
 #navbar > #menu > .Sections{
     width: 120px;
