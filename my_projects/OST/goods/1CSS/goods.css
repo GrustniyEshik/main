@@ -10,6 +10,9 @@ BODY {
     flex-direction: column;
     align-items: center;
 
+    position: sticky;
+    z-index: -1;
+
     /*Скрытый скролбар*/
     overflow-x: hidden;
     margin: 0px;
@@ -139,16 +142,72 @@ BODY {
 
 
 #mainModule {
-    width: 90vw;
-    height: 1000px;
+    width: 90%;
+    height: auto;
     
     position: relative;
     z-index: -1;
 
-    display: grid;
-    grid-template-columns: 90vw;
-    grid-template-rows: auto auto auto auto auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
+}
+
+
+
+#moduleGoogs1{
+    width: 95vw;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#moduleGoogs1 > #textGoogs1 {
+    width: max-content;
+    height: max-content;
+
+    font-size: 50px;
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+#moduleGoogs1 > #blockGoods1 {
+    width: 95vw;
+    height: 450px;
+
+    border: 0.1vw rgb(21, 135, 201) solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+
+    font-size: 40px;
+    overflow-x: scroll;
+    display: flex;
+    
+    justify-content: start;
+}
+#moduleGoogs1 > #blockGoods1 > #scrollGoods1 {
+    width: max-content;
+    height: 90%;
+
+    display: flex;
+    flex-direction: row;
+}
+#moduleGoogs1 > #blockGoods1 > #scrollGoods1 > .Goods {
+    width: 300px;
+    height: 100%;
+
+    border-width: 2px;
+
+    margin: 0px 5px 0px 5px;
+
+    border-color: rgb(43, 0, 255);
+    border-style: solid;
+    border-radius: 10px;
 }
 
 
@@ -179,51 +238,17 @@ footer {
 }
 /*Сама полоска скролбара*/
 ::-webkit-scrollbar-track {
-    width: 1vw;
     background-color: rgb(202, 202, 202);
+}
+::-webkit-scrollbar-track:hover {
+    background-color: rgb(167, 167, 167);
 }
 /*Ползунок скролбара*/
 ::-webkit-scrollbar-thumb {
+    height: 90px;
     background-color: rgb(43, 0, 255);
     border-radius: 100vw;
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(118, 0, 255);
 }
-
-
-
-
-
-
-
-/*Анимация копок 1*/
-@keyframes animate1 {
-    0% {
-      background-position: 0%;
-    }
-    100% {
-      background-position: 400%;
-    }
-  }
-   
-  .btn:before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
-    z-index: -1;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    border-radius: 40px;
-    opacity: 0;
-    transition: .5s;
-  }
-   
-  .btn:hover:before {
-    filter: blur(20px);
-    opacity: 1;
-    animation: animate 8s linear infinite;
-  }
