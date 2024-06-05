@@ -1,18 +1,26 @@
+function start() {
+    x = document.getElementById("scrollPopularGoods");
+
+    for (let i = 1; i < 5; i++) {
+        x.innerHTML = x.innerHTML + `<button class="Goods" id="goods1.${i}"><img src="3IMG/Goods/Good_${i}.png"></button>`
+        console.log (i);
+    }
+}
+start();
+
 function go(id) {
     location.href = `https://grustniyeshik.github.io/main/my_projects/OST/`+id+`/`+id+`.html`;
 }
 
-
-
 function load(id) {
-    x = document.getElementById("scrollPopularGoods2");
+    x = document.getElementById("scrollPopularGoods");
 
-    x.innerHTML = 
-    `<div class="Goods" id="goods1.1"></div>
-    <div class="Goods" id="goods1.2"></div>
-    <div class="Goods" id="goods1.3"></div>
-    <div class="Goods" id="goods1.4"></div>
-    <div class="Goods" id="goods1.5"></div>`
+    x.innerHTML = "";
+
+    for (let i = 1; i < 5; i++) {
+        x.innerHTML = x.innerHTML + `<button class="Goods" id="goods2.${i}"><img src="3IMG/Goods/${id}/Good_${i}.png"></button>`
+        console.log (i);
+    }
 }
 
 
