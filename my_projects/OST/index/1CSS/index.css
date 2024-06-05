@@ -145,7 +145,7 @@ BODY {
 
 
 #mainModule {
-    width: 90vw;
+    width: 1200px;
     height: max-content;
     
     position: relative;
@@ -154,47 +154,33 @@ BODY {
     display: grid;
     grid-template-columns: 90vw;
     grid-template-rows: auto auto auto auto auto;
+
+    border: red 0.1vw solid;
 }
-#mainModule * {
-    grid-row: auto;
-    justify-self: center;
-    z-index: 1;
-}
-
-
-
-
 
 
 
 #moduleAboutUs {
-    width: 85vw;
+    width: 1200px;
     height: auto;
-    
-    position: relative;
-    z-index: -1;
 
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-#moduleAboutAs * {
-    z-index: 2;
-}
 #moduleAboutUs > #logo {
-    width: min-content;
-    height: min-content;
+    width: auto;
+    height: auto;
 }
 #moduleAboutUs > #logo > #logoImg {
-    width: 350px;
+    width: 400px;
     height: auto;
 }
 #moduleAboutUs > #slogan {
-    width: 50vw;
-    height: 50vw;
+    width: 600px;
+    height: 600px;
 
     display: flex;
     justify-content: center;
@@ -213,11 +199,14 @@ BODY {
 
 
 #directions {
-    width: 100vw;
+    width: 1200px;
     height: auto;
+    border: red 0.1vw solid;
+
+    margin-bottom: 75px;
 }
 #directions > #bannerTop {
-    height: 50vw;
+    height: 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -242,7 +231,7 @@ BODY {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(106, 10, 38, 0.75));
 }
 #directions > #bannerButtons {
-    height: 20vw;
+    height: 200px;
     display: flex;
     justify-content: space-between;
 }
@@ -258,8 +247,12 @@ BODY {
 
     -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 0.5);
 
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+
     color: rgb(255, 255, 255);
-    font-size: 3vw;
+    font-size: 33px;
 }
 #directions > #bannerButtons > #buutonHouse {
     background-color: rgba(118, 0, 255, 0.75);
@@ -277,7 +270,7 @@ BODY {
 
 
 #modulePopularGoogs{
-    width: 95vw;
+    width: 1200px;
     height: auto;
 
     display: flex;
