@@ -278,9 +278,6 @@ BODY {
 
     font-size: 50px;
 }
-#modulePopularGoogs > #blockPopularGoogs {
-
-}
 #modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods {
     width: 1200px;
 
@@ -367,10 +364,6 @@ footer {
 
     font-size: 16px;
 }
-
-#adres {
-
-}
 #adresText {
     font-family: Raleway;
     color: rgb(255, 255, 255);
@@ -440,7 +433,6 @@ footer {
     }
     #moduleAboutUs > #logo > #logoImg {
         width: 25vw;
-        border: red 0.1vw solid;
     }
     #moduleAboutUs > #slogan {
         width: 60vw;
