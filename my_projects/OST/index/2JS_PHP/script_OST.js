@@ -1,7 +1,8 @@
+
 function start() {
     x = document.getElementById("scrollPopularGoods");
 
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i <= 10; i++) {
         x.innerHTML = x.innerHTML + `<button class="Goods" id="goods1.${i}"><img src="3IMG/Goods/Good_${i}.png"></button>`
         console.log (i);
     }
@@ -17,7 +18,7 @@ function load(id) {
 
     x.innerHTML = "";
 
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i <= 10; i++) {
         x.innerHTML = x.innerHTML + `<button class="Goods" id="goods2.${i}"><img src="3IMG/Goods/${id}/Good_${i}.png"></button>`
         console.log (i);
     }
