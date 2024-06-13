@@ -150,7 +150,9 @@ BODY {
     grid-template-rows: auto auto auto auto auto;
 
 }
-
+#mainModule > #moduleSocialNetwork {
+    
+}
 
 
 footer {

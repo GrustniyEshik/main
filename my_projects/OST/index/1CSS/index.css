@@ -69,15 +69,11 @@ BODY {
 #navbar > #logo > #logoTextTop {
     font-size: 75px;
 
-    color: black;
-
     font-family: Gadies;
     text-decoration: none;
 }
 #navbar > #logo > #logoTextBottom {
     font-size: 15px;
-
-    color: black;
     
     font-family: Raleway;
     text-decoration: none;
@@ -145,7 +141,7 @@ BODY {
 
 
 #mainModule {
-    width: 90vw;
+    width: 1200px;
     height: max-content;
     
     position: relative;
@@ -155,46 +151,30 @@ BODY {
     grid-template-columns: 90vw;
     grid-template-rows: auto auto auto auto auto;
 }
-#mainModule * {
-    grid-row: auto;
-    justify-self: center;
-    z-index: 1;
-}
-
-
-
-
 
 
 
 #moduleAboutUs {
-    width: 85vw;
+    width: 1200px;
     height: auto;
-    
-    position: relative;
-    z-index: -1;
 
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-#moduleAboutAs * {
-    z-index: 2;
-}
 #moduleAboutUs > #logo {
-    width: min-content;
-    height: min-content;
+    width: auto;
+    height: auto;
 }
 #moduleAboutUs > #logo > #logoImg {
-    width: 350px;
+    width: 400px;
     height: auto;
 }
 #moduleAboutUs > #slogan {
-    width: 50vw;
-    height: 50vw;
+    width: 600px;
+    height: 600px;
 
     display: flex;
     justify-content: center;
@@ -213,11 +193,13 @@ BODY {
 
 
 #directions {
-    width: 100vw;
+    width: 1200px;
     height: auto;
+
+    margin-bottom: 75px;
 }
 #directions > #bannerTop {
-    height: 50vw;
+    height: 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -242,7 +224,7 @@ BODY {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(106, 10, 38, 0.75));
 }
 #directions > #bannerButtons {
-    height: 20vw;
+    height: 200px;
     display: flex;
     justify-content: space-between;
 }
@@ -258,8 +240,12 @@ BODY {
 
     -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 0.5);
 
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+
     color: rgb(255, 255, 255);
-    font-size: 3vw;
+    font-size: 33px;
 }
 #directions > #bannerButtons > #buutonHouse {
     background-color: rgba(118, 0, 255, 0.75);
@@ -277,30 +263,26 @@ BODY {
 
 
 #modulePopularGoogs{
-    width: 95vw;
+    width: 1200px;
     height: auto;
 
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    margin-bottom: 75px;
 }
 #modulePopularGoogs > #textPopularGoogs {
     width: max-content;
     height: max-content;
 
     font-size: 50px;
-
-    margin-top: 2vh;
-    margin-bottom: 2vh;
 }
 #modulePopularGoogs > #blockPopularGoogs {
 
 }
 #modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods {
-    width: 95vw;
-    height: 450px;
-
-    border: 0.1vw rgb(21, 135, 201) solid;
+    width: 1200px;
 
     display: flex;
     align-items: center;
@@ -309,42 +291,38 @@ BODY {
 
     font-size: 40px;
 }
-
-/*Кнопки*/
-#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > button {
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods1 {
+    height: 150px;
+}
+/*Кнопки разделов*/
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods1 > button {
     width: 200px;
     height: 100px;
 
     padding: 10px 10px 10px 10px;
     margin: 0px 5px 0px 5px;
 
-    border-width: 2px;
-
     font-size: 25px;
-    
-    display: flex;
+
+    border: rgb(43, 0, 255) 2px solid;
+    border-radius: 10px;
 
     background-color: rgba(0, 0, 0, 0);
 
-    border-color: rgb(43, 0, 255);
-    border-style: solid;
-    border-radius: 10px;
-    
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-#modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods > button:hover { 
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods1 > button:hover { 
     background:linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+
     background-size: 400%;
     border-color: rgba(43, 0, 255, 0);
     color: rgb(255, 255, 255);
 }
-
-#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods1 {
-    
-}
-
 #modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 {
+    height: 350px;
+
     overflow-x: scroll;
     display: flex;
     justify-content: start;
@@ -357,29 +335,37 @@ BODY {
     flex-direction: row;
 }
 #modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > #scrollPopularGoods > .Goods {
-    width: 300px;
+    width: 270px;
     height: 100%;
-
-    border-width: 2px;
 
     margin: 0px 5px 0px 5px;
 
-    border-color: rgb(43, 0, 255);
-    border-style: solid;
+    background-color: rgb(0,0,0,0);
+
+    border: rgb(43, 0, 255) 0.1vw solid;
     border-radius: 10px;
 }
-
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > #scrollPopularGoods > .Goods:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > #scrollPopularGoods > .Goods > img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 
 
 footer {
     width: 100vw;
-    height: 20vh;
+    height: 170px;
+
     background-color: rgb(43, 0, 255);
 
-    margin-top: 3vh;
-    padding: 1vw;
+    padding: 20px;
 
     color: white;
+
+    font-size: 16px;
 }
 
 #adres {
@@ -441,3 +427,78 @@ footer {
     opacity: 1;
     animation: animate 8s linear infinite;
   }
+
+@media (width<=1200px) {
+    #mainModule {
+        width: 90vw;
+    }
+
+
+
+    #moduleAboutUs {
+        width: 100%;
+    }
+    #moduleAboutUs > #logo > #logoImg {
+        width: 25vw;
+        border: red 0.1vw solid;
+    }
+    #moduleAboutUs > #slogan {
+        width: 60vw;
+        height: 60vw;
+
+        font-size: 4vw;
+    }
+
+
+
+    #directions {
+        width: 100%;
+        height: ;
+    }
+    #directions > #bannerTop {
+        height: 25vw;
+    }
+    #directions > #bannerButtons {
+        height: 15vw;
+    }
+    #directions > #bannerButtons > .Partition_Button {
+        font-size: 2.75vw;
+    }
+
+
+
+    #modulePopularGoogs {
+        width: 100%;
+    }
+    #modulePopularGoogs > #textPopularGoogs {
+        font-size: 4vw;
+
+        margin-bottom: 2vw;
+    }
+    #modulePopularGoogs > #blockPopularGoogs > .BlocksPopularGoods {
+        width: 100%;
+    }
+    #modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods1 {
+        height: min-content;
+    }
+    #modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods1 > button {
+        width: 17vw;
+        height: 8vw;
+        font-size: 2vw;
+    }
+    #modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 {
+        width: 90vw;
+        height: 30vw;
+    }
+    #modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > #scrollPopularGoods > .Goods {
+        width: max-content;
+        height: auto;
+    }
+
+
+
+    footer {
+        height: 20vw;
+        font-size: 2vw;
+    }
+}
