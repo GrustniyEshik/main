@@ -169,17 +169,15 @@ BODY {
 
 footer {
     width: 100vw;
-    height: 20vh;
+    height: 170px;
+
     background-color: rgb(43, 0, 255);
 
-    margin-top: 3vh;
-    padding: 1vw;
+    padding: 20px;
 
     color: white;
-}
 
-#adres {
-
+    font-size: 16px;
 }
 #adresText {
     font-family: Raleway;
@@ -206,4 +204,19 @@ footer {
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(118, 0, 255);
+}
+
+
+
+@media (width<=1200px) {
+    #mainModule {
+        width: 90vw;
+    }
+
+
+    
+    footer {
+        height: 20vw;
+        font-size: 2vw;
+    }
 }

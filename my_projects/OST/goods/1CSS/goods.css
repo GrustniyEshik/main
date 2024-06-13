@@ -222,10 +222,6 @@ footer {
 
     color: white;
 }
-
-#adres {
-
-}
 #adresText {
     font-family: Raleway;
     color: rgb(255, 255, 255);
@@ -251,4 +247,19 @@ footer {
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(118, 0, 255);
+}
+
+
+
+@media (width<=1200px) {
+    #mainModule {
+        width: 90vw;
+    }
+
+
+    
+    footer {
+        height: 20vw;
+        font-size: 2vw;
+    }
 }
