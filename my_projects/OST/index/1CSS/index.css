@@ -332,7 +332,7 @@ BODY {
     flex-direction: row;
 }
 #modulePopularGoogs > #blockPopularGoogs > #blockPopularGoods2 > #scrollPopularGoods > .Goods {
-    width: 270px;
+    width: max-content;
     height: 100%;
 
     margin: 0px 5px 0px 5px;
