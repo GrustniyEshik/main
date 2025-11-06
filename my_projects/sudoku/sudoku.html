@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_sudoku.css">
+    <link rel="stylesheet" href="border_sudoku.css">
+    <title>Судоку</title>
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="control_div">
+    <a class="control" id="back" href="D:\sites\my_projects\my_projects.html"></a>
+</div>
+
+<div id="pole">
+    <div id="c1" class="cell">
+        <div id="c1_1" class="subcells"></div>
+        <div id="c1_2" class="subcells"></div>
+        <div id="c1_3" class="subcells"></div>
+        <div id="c1_4" class="subcells"></div>
+        <div id="c1_5" class="subcells"></div>
+        <div id="c1_6" class="subcells"></div>
+        <div id="c1_7" class="subcells"></div>
+        <div id="c1_8" class="subcells"></div>
+        <div id="c1_9" class="subcells"></div>
+    </div>
+    <div id="c2" class="cell">
+        <div id="c2_1" class="subcells"></div>
+        <div id="c2_2" class="subcells"></div>
+        <div id="c2_3" class="subcells"></div>
+        <div id="c2_4" class="subcells"></div>
+        <div id="c2_5" class="subcells"></div>
+        <div id="c2_6" class="subcells"></div>
+        <div id="c2_7" class="subcells"></div>
+        <div id="c2_8" class="subcells"></div>
+        <div id="c2_9" class="subcells"></div>
+    </div>
+    <div id="c3" class="cell">
+        <div id="c3_1" class="subcells"></div>
+        <div id="c3_2" class="subcells"></div>
+        <div id="c3_3" class="subcells"></div>
+        <div id="c3_4" class="subcells"></div>
+        <div id="c3_5" class="subcells"></div>
+        <div id="c3_6" class="subcells"></div>
+        <div id="c3_7" class="subcells"></div>
+        <div id="c3_8" class="subcells"></div>
+        <div id="c3_9" class="subcells"></div>
+    </div>
+    <div id="c4" class="cell">
+        <div id="c4_1" class="subcells"></div>
+        <div id="c4_2" class="subcells"></div>
+        <div id="c4_3" class="subcells"></div>
+        <div id="c4_4" class="subcells"></div>
+        <div id="c4_5" class="subcells"></div>
+        <div id="c4_6" class="subcells"></div>
+        <div id="c4_7" class="subcells"></div>
+        <div id="c4_8" class="subcells"></div>
+        <div id="c4_9" class="subcells"></div>
+    </div>
+    <div id="c5" class="cell">
+        <div id="c5_1" class="subcells"></div>
+        <div id="c5_2" class="subcells"></div>
+        <div id="c5_3" class="subcells"></div>
+        <div id="c5_4" class="subcells"></div>
+        <div id="c5_5" class="subcells"></div>
+        <div id="c5_6" class="subcells"></div>
+        <div id="c5_7" class="subcells"></div>
+        <div id="c5_8" class="subcells"></div>
+        <div id="c5_9" class="subcells"></div>
+    </div>
+    <div id="c6" class="cell">
+        <div id="c6_1" class="subcells"></div>
+        <div id="c6_2" class="subcells"></div>
+        <div id="c6_3" class="subcells"></div>
+        <div id="c6_4" class="subcells"></div>
+        <div id="c6_5" class="subcells"></div>
+        <div id="c6_6" class="subcells"></div>
+        <div id="c6_7" class="subcells"></div>
+        <div id="c6_8" class="subcells"></div>
+        <div id="c6_9" class="subcells"></div>
+    </div>
+    <div id="c7" class="cell">
+        <div id="c7_1" class="subcells"></div>
+        <div id="c7_2" class="subcells"></div>
+        <div id="c7_3" class="subcells"></div>
+        <div id="c7_4" class="subcells"></div>
+        <div id="c7_5" class="subcells"></div>
+        <div id="c7_6" class="subcells"></div>
+        <div id="c7_7" class="subcells"></div>
+        <div id="c7_8" class="subcells"></div>
+        <div id="c7_9" class="subcells"></div>
+    </div>
+    <div id="c8" class="cell">
+        <div id="c8_1" class="subcells"></div>
+        <div id="c8_2" class="subcells"></div>
+        <div id="c8_3" class="subcells"></div>
+        <div id="c8_4" class="subcells"></div>
+        <div id="c8_5" class="subcells"></div>
+        <div id="c8_6" class="subcells"></div>
+        <div id="c8_7" class="subcells"></div>
+        <div id="c8_8" class="subcells"></div>
+        <div id="c8_9" class="subcells"></div>
+    </div>
+    <div id="c9" class="cell">
+        <div id="c9_1" class="subcells"></div>
+        <div id="c9_2" class="subcells"></div>
+        <div id="c9_3" class="subcells"></div>
+        <div id="c9_4" class="subcells"></div>
+        <div id="c9_5" class="subcells"></div>
+        <div id="c9_6" class="subcells"></div>
+        <div id="c9_7" class="subcells"></div>
+        <div id="c9_8" class="subcells"></div>
+        <div id="c9_9" class="subcells"></div>
+    </div>
+</div>
+
+<div id="functions">
+    <div id="eraser" class="function">
+        <img src="eraser.png">
+        <a>Ластик</a>
+    </div>
+    <div id="pencil" class="function">
+        <img src="pencil.png">
+        <a>Карандаш</a>
+    </div>
+    <div id="decision" class="function">
+        <img src="decision.png">
+        <a>Решение</a>
+    </div>
+</div>
+
+<div id="numbers">
+    <div id="1" class="number">1</div>
+    <div id="2" class="number">2</div>
+    <div id="3" class="number">3</div>
+    <div id="4" class="number">4</div>
+    <div id="5" class="number">5</div>
+    <div id="6" class="number">6</div>
+    <div id="7" class="number">7</div>
+    <div id="8" class="number">8</div>
+    <div id="9" class="number">9</div>
+</div>
+
+</body>
+</html>

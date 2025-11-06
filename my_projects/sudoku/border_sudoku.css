@@ -1,0 +1,283 @@
+
+.subcells {
+    border: 0.1vw solid rgba(255, 255, 255, 0.5);
+}
+
+#c1_3 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c1_6 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c1_7 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c1_8 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c1_9 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+
+
+
+#c2_1 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c2_3 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c2_4 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c2_6 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c2_7 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c2_8 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c2_9 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+
+
+
+#c3_1 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c3_4 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c3_7 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c3_8 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c3_9 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+
+
+
+#c4_1 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c4_2 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c4_3 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c4_6 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c4_7 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c4_8 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c4_9 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+
+
+
+#c5_1 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c5_2 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c5_3 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c5_4 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c5_6 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c5_7 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c5_8 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c5_9 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+
+
+
+#c6_1 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+        border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c6_2 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c6_3 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c6_4 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c6_7 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c6_8 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+#c6_9 {
+    border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1.75px;
+}
+
+
+
+#c7_1 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c7_2 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c7_3 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c7_6 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c7_9 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+
+
+
+#c8_1 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c8_2 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c8_3 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c8_4 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c8_6 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+#c8_7 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c8_9 {
+    border-right-color: rgba(255, 255, 255, 1);
+    border-right-width: 1.75px;
+}
+
+
+
+#c9_1 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c9_2 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c9_3 {
+    border-top-color: rgba(255, 255, 255, 1);
+    border-top-width: 1.75px;
+}
+#c9_4 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}
+#c9_7 {
+    border-left-color: rgba(255, 255, 255, 1);
+    border-left-width: 1.75px;
+}

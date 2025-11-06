@@ -17,25 +17,26 @@
 }
 
 #side_panel{
-    width: 25vw;
+    width: 425px;
     height: 100vh;
+
+    padding-left: 20px;
 
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(25px);
-    border-right: 0.25vw solid rgb(255, 255, 255);
-
-    padding: 5vw 1vw;
+    border-right: 2px solid rgb(255, 255, 255);
 }
 #title{
-    font-size: 8vw;
-    margin-bottom: 5vw;
+    font-size: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 #list_menu div{
-    margin: 1vw;
+    margin: 10px;
 }
 #list_menu a{
-    border-left: 0.2vw solid white;
-    font-size: 3vw;
+    border-left: 2px solid white;
+    font-size: 50px;
     color: rgb(255, 255, 255);
 }
 #list_menu a:hover{
@@ -55,25 +56,9 @@
 }
 
 @media(width<100vh){
-    #side_panel{
-        width: 50vw;
-    }
-    #title{
-        font-size: 16vw;
-    }
-    #list_menu a{
-        font-size: 6vw;
-    }
+
 }
 
 @media(width<50vh){
-    #side_panel{
-        width: 100vw;
-    }
-    #title{
-        font-size: 32vw;
-    }
-    #list_menu a{
-        font-size: 8vw;
-    }
+
 }

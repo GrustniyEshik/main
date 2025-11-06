@@ -1,0 +1,1 @@
+array_cells=document.querySelectorAll(".subcells"); 
